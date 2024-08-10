@@ -1,12 +1,12 @@
 // noinspection JSUnusedGlobalSymbols
 
 import { defineConfig } from 'vitepress'
-import {learnSideBarConfig} from "../docs/learn/learnSideBarConfig";
+import { sidebarConfig, topNavConfig } from "../docs/navigation";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Numichi.Dev",
-    description: "Developing",
+    description: "Developing", // TODO: Write a correct description
     base: "/site/",
     assetsDir: 'assets',
     srcDir: 'docs',
@@ -27,15 +27,8 @@ export default defineConfig({
             next: 'Előző'
         },
 
-        nav: [
-            {text: 'Kezdő oldal', link: '/'},
-            {text: 'Frissítések', link: '/changelog'},
-            {text: 'Rólam', link: '/about'}
-        ],
-
-        sidebar: {
-            '/learn/': learnSideBarConfig
-        },
+        nav: topNavConfig,
+        sidebar: sidebarConfig,
 
         search: {
             provider: 'local'
@@ -47,7 +40,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/numichi-dev'}
+            { icon: 'github', link: 'https://github.com/numichi-dev' }
         ]
     }
 })

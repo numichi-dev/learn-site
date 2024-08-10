@@ -1,2 +1,8 @@
-- Az oldal első körben fejlesztői témákat feszeget
-- 
+---
+outline: deep
+lastUpdated: 2021-08-10
+---
+
+::: warning Figyelem!
+Írás alatt álló dokumentum.
+:::

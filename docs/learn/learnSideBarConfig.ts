@@ -9,7 +9,7 @@ export const learnSideBarConfig: DefaultTheme.SidebarItem[] = [
                 link: '/learn/start/how'
             },
             {
-                text: 'Hogyan kezdjük?',
+                text: 'Mi szükséges?',
                 link: '/learn/start/what-needs'
             },
         ]
