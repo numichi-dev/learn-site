@@ -7,6 +7,7 @@ import {learnSideBarConfig} from "../docs/learn/learnSideBarConfig";
 export default defineConfig({
     title: "Numichi.Dev",
     description: "Developing",
+    base: "/site/",
     assetsDir: 'assets',
     srcDir: 'docs',
 
