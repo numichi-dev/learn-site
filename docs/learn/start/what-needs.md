@@ -1,0 +1,2 @@
+- Az oldal első körben fejlesztői témákat feszeget
+- 
