@@ -1,11 +1,11 @@
-import { learnSideBarConfig } from "./learn/learnSideBarConfig";
+import { learnSideBarConfig } from "./tan-osveny/learnSideBarConfig";
 import { DefaultTheme } from "vitepress";
 
 export const topNavConfig: DefaultTheme.NavItem[] = [
     { text: 'Kezdő oldal', link: '/' },
-    { text: 'Rólam', link: '/about' }
+    { text: 'Rólam', link: '/rolam' }
 ]
 
 export const sidebarConfig: DefaultTheme.Sidebar = {
-    '/learn/': learnSideBarConfig
+    '/tan-osveny/': learnSideBarConfig
 }

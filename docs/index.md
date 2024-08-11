@@ -8,7 +8,7 @@ hero:
     actions:
         -   theme: brand
             text: Kezdjük el!
-            link: /learn/start/how-to-start
+            link: /tan-osveny/bevezetes/mirol-szol
 
 #features:
 #    -   title: Algoritmusok és adatszerkezetek
@@ -25,11 +25,12 @@ hero:
 
 Itt különféle IT témákba merülhetsz el. Szó lesz (ahogy az oldal fejlődik) a következő témákról a teljesség igénye nélkül:
 
-- programozás,
-- algoritmusok,
-- rendszerüzemeltetés,
-- hálózatok működése,
-- és a mindennapi informatika.
+- programozás
+- algoritmusok
+- rendszerüzemeltetés
+- hálózatok működése
+- mindennapi informatika
+- és ami még felkerül
 
 ## Légy te is a közösségnek része!
 
@@ -41,10 +42,6 @@ példa arra, hogyan segíthetnek egymásnak a kezdők és a szakértők. Legyél
 legnagyobb erőforrásoddá!
 
 Sose vagy egyedül. Még, ha egyedül is tanulsz, akkor is ott van a közösség, ahol segítséget kaphatsz, és ahol te is segíthetsz másoknak.
-
-**A közösség egy dolgot követel meg:** Ami interneten megtalálható 10 perc alatt, azt ne kérdezd meg. Biztos más is feltette már azt a kérdést. Gyorsabban kapod
-meg a választ rá keresve, mint vársz a válaszra (ha válaszolnak rá egyáltalán). Azokra a kérdésekre kérj segítséget, amelyekre nem találtál választ, vagy
-amelyekre nem találtál megoldást.
 
 ## Hozzájárulnál az oldalhoz?
 

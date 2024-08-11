@@ -31,6 +31,10 @@ Minden leírást megtalálható [VitePress dokumentációban](https://vitepress.
 - [Last Updated](https://vitepress.dev/reference/default-theme-last-updated)-et manuálisan kell átírni UTC idő szerint, ha van dátum. A VitePress magyar időzóna
   szerint rászámol még 1 (vagy nyári szerint 2) órát.
 
+### SEO beállítások
+- Routing esetén az URL-ek legyenek magyarul
+- Meta leírások és címek is legyenek magyarul
+
 ## Nyelvi szabályok
 Az alap megközelítés az, hogy magyarok által írt oldal magyaroknak, közben feltételezve azt, hogy az olvasók nem minden esetben ismerhetik az angol nyelvet vagy
 bizonyos IT szakszavakat. Így minden esetben hivatkozni vagy zárójelben szükséges megmagyarázni az annak jelentését.

@@ -3,11 +3,7 @@
 Sziasztok, én Numichi vagyok (polgári néven [Csongor Donát](https://www.linkedin.com/in/donat-csongor/)) és szakmámat tekintve Programtervező Informatikus
 vagyok, de a gyakorlatben inkább "Software Engineer"-ként hivatkozok magamra.
 
-Szakmai életem során sose tudtam egyhelyben maradni, bár ennek több erre vissza vezethető oka is van. Volt egy COVID, volt egy infláció, volt egy érdeklődés
-változás és eleve sokminden is érdekel az IT-n belül..., ami látszólagos [Job hopper](https://www.hrportal.hu/jelentese/job-hopping.html)-é tett. Így történt
-az, hogy 7 év alatt az 5. munkahelyemen vagyok (mikor írom e sorokat), de hogy őszinte legyek, nem sajnálom.
-
-## Miért?
+## Miért van ez az oldal?
 
 A történet kezdő pontja 2021 áprilisa, amikor egyik jó báratom beajánlott – akkor még a tudtomon kívül – Spring Boot mentor és oktatónak
 a [FlowAcademy](https://flowacademy.hu/) bootcamp iskolába. Itt 3 évet töltöttem el és összesen 4 képzéshez adtam a neve.
@@ -21,4 +17,6 @@ alig értek (amikor írom e sorokat), de leírva mindez kényelmesebb és újra 
 
 ## Elérhetőségek
 
+- [GitHub Issue](https://github.com/numichi-dev/site/issues/new)
 - [LinkedIn](https://www.linkedin.com/in/donat-csongor/)
+- [email](mailto:numichidev@proton.me)
