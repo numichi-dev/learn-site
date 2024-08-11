@@ -1,4 +1,30 @@
+# Visual Studio Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+
+# NetBeans
+nbproject/
+
+# JavaScript repository commands
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+
+# Node
 /node_modules/
+
+# VitePress
 /.vitepress/cache/
 /.vitepress/dist/
-/.idea/

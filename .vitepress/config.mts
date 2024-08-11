@@ -6,7 +6,7 @@ import { sidebarConfig, topNavConfig } from "../docs/navigation";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Numichi.Dev",
-    description: "Developing", // TODO: Write a correct description
+    description: "Numichi.Dev - programozás, üzemeltetés, technológiai leírások, tippek és trükkök",
     assetsDir: 'assets',
     srcDir: 'docs',
 
@@ -19,6 +19,10 @@ export default defineConfig({
                 hour12: false,
                 formatMatcher: 'basic',
             }
+        },
+
+        footer: {
+            message: 'Powered by VitePress & GitHub Pages',
         },
 
         docFooter: {
@@ -39,7 +43,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/numichi-dev' }
+            { icon: 'github', link: 'https://github.com/numichi-dev/site' }
         ]
     }
 })
