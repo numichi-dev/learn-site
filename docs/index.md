@@ -1,43 +1,35 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+title: Fejlődjünk együtt!
 hero:
     name: "Numichi.Dev"
     text: "Fejlődjünk együtt!"
-    tagline: My great project tagline
     actions:
         -   theme: brand
             text: Kezdjük el!
             link: /learn/start/how-to-start
 
-features:
-    -   title: Algoritmusok és adatszerkezetek
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    -   title: Hálózatok
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    -   title: Linux
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#features:
+#    -   title: Algoritmusok és adatszerkezetek
+#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#    -   title: Hálózatok
+#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#    -   title: Linux
+#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<div style="height: 48px;"></div>
-
-::: warning Figyelem!
-Írás alatt álló oldal. Számos változás várható.
-:::
+[//]: # (<div style="height: 48px;"></div>)
 
 # Üdvözöllek a Numichi.Dev oldalán!
 
-Üdvözöllek az oldalon! Itt különféle témákba merülhetünk el, mint például:
+Itt különféle IT témákba merülhetsz el. Szó lesz (ahogy az oldal fejlődik) a következő témákról a teljesség igénye nélkül:
 
 - programozás,
 - algoritmusok,
 - rendszerüzemeltetés,
 - hálózatok működése,
 - és a mindennapi informatika.
-
-Célom egy olyan felület létrehozása, ahol gyakorlatiasan mutatom be ezeket a területeket, hogy bárki könnyen eligazodjon. Mindezt elbeszélgetéses formában és
-tegeződő viszonyban. Természetesen a szakmai szóhasználatot is megtartom, de igyekszem a lehető legközérthetőbben megfogalmazni a dolgokat.
 
 ## Légy te is a közösségnek része!
 
@@ -60,9 +52,5 @@ Hibát találtál vagy csak kiegészítenéd, hozzájárulnál az oldalhoz, akko
 
 ## Kérdésed lenne?
 
-Kérdésed lenne? Lépj kapcsolatba velünk [email](mailto:numichidev@proton.me)-en vagy nyiss egy [issue-t](https://github.com/numichi-dev/site/issues) a
+Kérdésed lenne? Írj a [email](mailto:numichidev@proton.me)-re vagy nyiss egy [issue-t](https://github.com/numichi-dev/site/issues) a
 GitHub-on.
-
-
-
-

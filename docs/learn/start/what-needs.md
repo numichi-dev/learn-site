@@ -1,8 +1,8 @@
 ---
 outline: deep
-lastUpdated: 2021-08-10
+lastUpdated: 2024-08-10
 ---
 
 ::: warning Figyelem!
-Írás alatt álló dokumentum.
+Az oldal szerkesztés alatt! A tartalom változhat!
 :::
