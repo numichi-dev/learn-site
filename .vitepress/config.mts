@@ -7,7 +7,6 @@ import { sidebarConfig, topNavConfig } from "../docs/navigation";
 export default defineConfig({
     title: "Numichi.Dev",
     description: "Developing", // TODO: Write a correct description
-    base: "/site/",
     assetsDir: 'assets',
     srcDir: 'docs',
 
