@@ -18,4 +18,13 @@ export const learnSideBarConfig: DefaultTheme.SidebarItem[] = [
             },
         ]
     },
+    {
+        text: 'Alapok',
+        items: [
+            {
+                text: 'Program',
+                link: '/tan-osveny/alapok/program'
+            },
+        ]
+    },
 ];
