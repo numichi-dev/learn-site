@@ -9,7 +9,7 @@ export const learnSideBarConfig: DefaultTheme.SidebarItem[] = [
                 link: '/tan-osveny/bevezetes/mirol-szol'
             },
             {
-                text: 'Neház szakma',
+                text: 'Nehéz szakma',
                 link: '/tan-osveny/bevezetes/nehez-szakma'
             },
             {
