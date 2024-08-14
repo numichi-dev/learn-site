@@ -25,6 +25,10 @@ export const learnSideBarConfig: DefaultTheme.SidebarItem[] = [
                 text: 'Program',
                 link: '/tan-osveny/alapok/program'
             },
+            {
+                text: 'Első Lépés',
+                link: '/tan-osveny/alapok/elso-lepes'
+            },
         ]
     },
 ];

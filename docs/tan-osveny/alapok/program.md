@@ -5,13 +5,13 @@ lastUpdated: 2024-08-13
 
 # Program
 
-Gondolom tapasztaltad már, hogy ha valamit bekapcsolsz (laptopot, telefont, TV-t, ...) akkor egy előre megírt program sorozatot (vagy ha úgy tetszik kódot) futtatsz? Ha nézed ezt az oldalt gondoltad volna, hogy a böngésző értelmezi azt a jel halmazt, amit te is meg tudsz tekinteni? Minden, amiben áram fut és valamilyen formában processzort (chipet) tartalmaz, azt mind-mind ember tervezte, fejlesztette és írtak rá valamilyen működést. Ez a működés hozza létre azt az interakciót, hogy olvashatod e sorokat.
+Gondolom tapasztaltad már, hogy ha valamit bekapcsolsz (laptopot, telefont, TV-t, ...) akkor egy előre megírt program sorozatot - vagy ha úgy tetszik kódot - futtatsz? Ha nézed ezt az oldalt gondoltad volna, hogy a böngésző értelmezi azt az adat halmazt, amit te is meg tudsz tekinteni? Minden, amiben áram fut és valamilyen formában processzort (chipet) tartalmaz, azt mind-mind ember tervezte, fejlesztette és írtak rá valamilyen működést. Ez a működés hozza létre azt az interakciót, hogy kommunikálni tudjunk az eszközzel vagy legalább is jelzést adjon számunkra.
 
 A programozás nem szól másról, mint valamilyen probléma megoldásáról vagy egy adott feladat végrehajtásról.
 
 Egy eszköz önmagában nem tudja, hogy hogyan kezeljen egy helyzetet vagy hogyan és mit hajtson végre egy szituációban. Azt meg pláne, hogy hogyan adja tudtunkra. Ennek meghatározásához a gép nyelvén lépésről lépésre kell megadni az utasításokat valamilyen kód formában és az adott szigorú nyelvtana (szintaxisa) szerint.
 
-A fejlesztő vagy programozó, az a személy, aki ezt a problémát megoldja kód formájában. Így elegendő egyszer megvalósítani (implementálni).
+A fejlesztő vagy programozó, az a személy, aki ezt a problémát megoldja kód formájában. Mondhatjuk azt is, hogy tolmács szerepet játszik az _igény_ és a _gép_ között. Mivel egy ilyen megoldás újra hasznosítható, így elegendő egyszer megvalósítani (implementálni).
 
 Milyen problémák lehetnek, amik szembe jöhetnek?
 
@@ -23,15 +23,23 @@ Azt kell, hogy mondjam, hogy minden elektronikával működő eszköz és azok k
 
 ![Assembly](../../public/img/program/nyak.jpg)
 
-Tegyük fel, egy szobában tartózkodsz, gondolom rendelkezel egy lámpával. Jobb esetben a kapcsoló két állású, ami azt eredményezi, hogy van áram, amitől a lámpa világítani fog és a másik állásban pedig megszünteted azt. A programozás során is hasonló történik a motorháztető alatt, de ezeket elrejti a [CPU utasítás készlete](https://hu.wikipedia.org/wiki/Utas%C3%ADt%C3%A1sk%C3%A9szlet).
+[//]: # (TODO: Írni majd CPU ról valamikor valahol)
+Tegyük fel, egy szobában tartózkodsz, gondolom rendelkezel egy lámpával. Jobb esetben a kapcsoló két állású, ami azt eredményezi, hogy ha van áram akkor a lámpa világítani fog és a másik állásban pedig megszünteted azt. A programozás során is hasonló történik a motorháztető alatt, de sokkalta bonyolúltabban és rendkívül gyorsabban. Ezeket a működéseket elrejti a [CPU utasítás készlete](https://hu.wikipedia.org/wiki/Utas%C3%ADt%C3%A1sk%C3%A9szlet).
 
+> [!INFO] Megjegyzés
+> A CPU működéséről és felépítéséről RENGETEG információt találsz neten videó, egyetemi anyag vagy jegyzet formájában. Majd írok erről is, de részletekre most nincs szükség.
 
 ## Programozási nyelv szintek
 
 ### Alacsony szintű programozási nyelvek
 Az alacsony szintű programozási nyelvek közé tartozik a gépi kód és az Assembly nyelv, amelyek sokkal közelebb állnak a számítógép hardveréhez, mint az ember számára könnyen érthető formátumok. Ezek a nyelvek közvetlenül a gép számára értelmezhető utasításokat tartalmaznak, ezért gyorsan futnak, de írásuk és megértésük bonyolult.
 
-A legalacsonyabb szintű programozási módszer a gépi kód (Machine code), ahol közvetlenül utasíthatjuk a processzort. Azért hozták létre a gépi kód szimbolikus formáját, az Assembly-t, hogy egyszerűbb legyen írni és olvasni. Többféle Assembly létezik, de mindegyik ugyanarra a célra szolgál. Engedjétek meg, hogy az alábbi kép példájával éljek, akkor a `movl $0xFF00112233, %eax` Assembly utasítás a mellette lévő hexadecimális formátumnak felel meg a `B8 22 11 00 FF`. Ha ez elsőre bonyolultnak tűnik, ne aggódj – erre nagy valószínűséggel nem lesz szükséged. Csak azért említem, hogy lásd, milyen formában zajlanak a legalacsonyabb szinteken a műveletek, amelyekkel te nem fogsz közvetlenül találkozni. (Hacsak nem érdekel különösebben ez a téma, persze.) Elegendő annyit tudni, hogy ez az utasítás lényegében annyit jelent, hogy `$0xFF00112233` direkt megadott értéket mozgat `movl` a `EAX` regiszterbe, azaz CPU belső "memóriájába".
+A legalacsonyabb szintű programozási módszer a gépi kód (Machine code), ahol közvetlenül utasíthatjuk a processzort. Az Assembly nyelvet a gépi kód szimbolikus formáját, hogy egyszerűbb legyen írni és olvasni kulcs szavak és jelzések formájában. Többféle Assembly létezik architektúra és rendszer függvényében, de mindegyik ugyanarra a célt szolgálja.
+
+Engedjétek meg, hogy az alábbi kép példájával éljek, akkor a `movl $0xFF00112233, %eax` Assembly utasítás a mellette lévő hexadecimális (`B8 22 11 00 FF`) formátumnak felel meg a. Ha ez elsőre ez kínai tűnik, ne aggódj – erre nagy valószínűséggel nem lesz szükséged. Csak azért említem, hogy lásd, milyen formában zajlanak a legalacsonyabb szinteken a műveletek, amelyekkel te nem fogsz közvetlenül találkozni. (Hacsak nem érdekel különösebben ez a téma, persze.) Elegendő annyit tudni, hogy ez az utasítás lényegében annyit jelent, hogy `$0xFF00112233` direkt megadott értéket mozgat `movl` a `EAX` regiszterbe, azaz CPU belső "memóriájába".
+
+> [!IMPORTANT] Működési hasonlat
+A CPU utasításról-utasításra hajtka ezeket végre és NEM tudja, hogy mit kell velük késöbb tenni és nem is emlékszik, hogy eddig mit csinált. Csak annyi információja van, amit a saját regisztereibe tett bele. Tehát folyton amnéziás és csak annyira emlékszik amennyi információ a zsebében van, ami nagyon limitált.
 
 > [!WARNING] Nem ellenőrzött tartalom!
 > Nem tudom, hogy az alábbi kép helyes-e. Ezt nem ellenőriztem, de a mondanivalóján nem változtat.
@@ -39,18 +47,14 @@ A legalacsonyabb szintű programozási módszer a gépi kód (Machine code), aho
 ![Assembly](../../public/img/program/machine-vs-assembly.jpg)
 
 ### Magas szintű programozási nyelvek
-A magas szintű programozási nyelvek skálája oriási. Ezek a nyelvek jobban absztaktálják (elrejtik) a számítógép (de ide értünk minden más elektronikus eszközt is) hardverének működését, és inkább az emberi logikára koncentrálódik. Az ilyen nyelvek szintaxisa (nyelvezete) közelebb áll az ember által könnyebben megtanulható nyelvhez, így könnyebb megtanulni és megérteni is.
+A magas szintű programozási nyelvek skálája oriási. Ezek a nyelvek jobban absztaktálják (elrejtik) a számítógép _(de ide értünk minden más elektronikus eszközt is)_ hardverének működését, és inkább az emberi logikára koncentrálódik. Az ilyen nyelvek szintaxisa (nyelvezete) közelebb áll az ember által könnyebben megtanulható nyelvhez, így könnyebb megtanulni és megérteni is.
 
 Az alábbi példa egy `C` magas szintű nyelvvel határozza meg az utasításokat, addig jobb oldalon annak Assembly-re fordított képét látjátok. Persze az Assembly-t se tudja még a gép futtatni, mert ez még csak a "szimbolizált" alakja a gépi kódnak. Ezt még le kell fordítani tényleges gépi kódra, ami már meg tud rágni a masina.
 
 > [!INFO]
 > Ezt a fordítást a magas nyelvek megoldják, így neked csak a lényegre kell majd figyelned.
 
-<table>
-<tr><th> C nyelv (magas) </th> <th> Assembly (alacsony)</th></tr>
-<tr>
-<td>
-
+**C nyelven egy példa**
 ```c
 int main() {
     bool a = true;
@@ -64,9 +68,7 @@ int main() {
 }
 ```
 
-</td>
-<td>
-
+**Assembly nyelven a fenti kód lefordítása.**
 ```assembly
 main:
         push    rbp
@@ -82,25 +84,11 @@ main:
         ret
 ```
 
-</td>
-</tr>
-</table>
 
 #### Mi is ez?
-```c:line-numbers
-int main() {
-    bool a = true;
-    int c = 0;
+Jelenleg ez egy értelmetlen program. :') Így, ha gondolod ugord át nyugodtan ezt a magyarázatot, mert késöbb úgy is elmagyarázom rész komponensenként.
 
-    if (a) {
-        c = 2;
-    }
-
-    return 0;
-}
-```
-
-Jelenleg ez egy értelmetlen program. :') Így, ha gondolod ugord át nyugodtan ezt a magyarázatot, mert késöbb úgy is elmagyarázom rész komponensenként, de ha érdekel:
+De ha érdekel:
 
 ```c:line-numbers{1,9,10}
 int main() {

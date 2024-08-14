@@ -15,6 +15,10 @@ export default defineConfig({
         hostname: 'https://numichi.dev'
     },
 
+    markdown: {
+        math: true
+    },
+
     head: [
         ['meta', {name: 'keywords', content: seo.keywords}],
         ['meta', {name: 'author', content: 'Numichi'}],
