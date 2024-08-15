@@ -22,13 +22,27 @@ export const learnSideBarConfig: DefaultTheme.SidebarItem[] = [
         text: 'Alapok',
         items: [
             {
-                text: 'Program',
-                link: '/tan-osveny/alapok/program'
+                text: 'Programokról',
+                link: '/tan-osveny/alapok/programok'
             },
             {
-                text: 'Első Lépés',
-                link: '/tan-osveny/alapok/elso-lepes'
+                text: 'Kezdő lépések',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Program nyelvek',
+                        link: '/tan-osveny/alapok/nyelvek'
+                    },
+                    {
+                        text: 'Környezet előkészítés',
+                        link: '/tan-osveny/alapok/kornyezet-elokeszites'
+                    }
+                ]
             },
+            // {
+            //     text: 'Első Lépés',
+            //     link: '/tan-osveny/alapok/elso-lepes'
+            // },
         ]
     },
 ];
