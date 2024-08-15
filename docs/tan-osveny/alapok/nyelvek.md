@@ -157,7 +157,7 @@ Tehát amit használni fogunk:
 
 - C - Hardver közeli nyelv, számos Operációs rendszert ebben írtak.
 - Rust - Ez a másik felkapott nyelv, ami a memória biztonságáról híres. Hogy ledobjam az atomot a ["Egyesült Államok Nemzetbiztonsági Ügynöksége" is szorgalmazza e nyelv használatát](https://www.hwsw.hu/hirek/65391/rust-programozas-nsa-amerikaiegyesultallamok-memoriakezeles-utmutato-kodolas-fejlesztes.html).
-- Java - Nagy vállalatok előszeretettel alkalmazzák a és számos Java fejlesztőt keresnek itthon is. HWSW valamely podcast-jában hangzott el, hogy "Magyarország Java nagy hatalom", de már nem vagyok benne biztos. Mármint, hogy HWSW-n hallottam-e ezt.
+- Java - Nagy vállalatok előszeretettel alkalmazzák és számos Java fejlesztőt keresnek itthon is. HWSW valamely podcast-jában hangzott el, hogy "Magyarország Java nagy hatalom", de már nem vagyok benne biztos... Mármint, hogy HWSW-n hallottam-e ezt.
 - Kotlin (Java variánsát) - Java-val 99.99%-van kompatibilis nyelv.
 - Go - Ez sok térben eltér a többi nyelvtől, de viszonylag új és egyszerű a nyelvezete, szerintem. Viszonylag új, mivel 2009-ben jött ki az első verzió.
 - Python - Szerintem már kiveséztük
