@@ -6,20 +6,36 @@ hero:
     name: "Numichi.Dev"
     text: "Fejlődjünk együtt!"
     actions:
-        -   theme: brand
-            text: Kezdjük el!
-            link: /tan-osveny/bevezetes/mirol-szol
+        - theme: brand
+          text: Bevezetés
+          link: /bevezetes/elso-lepesek
 
-#features:
-#    -   title: Algoritmusok és adatszerkezetek
-#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#    -   title: Hálózatok
-#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#    -   title: Linux
-#        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+    - title: Programozás (Kezdő)
+      details: Fejlesztés alatt
+      link: /bevezetes/mirol-szol
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
+    - title: Téma (szint)
+      details: Leírás
 ---
 
-[//]: # (<div style="height: 48px;"></div>)
+<div style="height: 16px;"></div>
+
+> [!CAUTION] Fejlesztés alatt
+> Az oldal írás és szerkesztés alatt.
+>
+> Oldal struktúrája, címei és linkjei változhatnak.
 
 # Üdvözöllek a Numichi.Dev oldalán!
 

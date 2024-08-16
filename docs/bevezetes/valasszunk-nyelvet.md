@@ -1,16 +1,17 @@
 ---
 outline: deep
-lastUpdated: 2024-08-15
+lastUpdated: 2024-08-16
 ---
 
-# Nyelvek
-A szoftver fejlesztés számos tudomány ágból tevődik össze. Nyilván neki lehet vágni ezen ismeretek hiányában is és sikerélményeket begyűjteni. Csak ne szálljon fejbe a dicsőség. Nem egyszer látom olyat - főleg a kezdők esetén -, hogy végig mentek egy YouTube tutoriálon és máris azt hiszik, hogy pro-k. Nyilván ez olyan tekintetben helytálló, hogy ez elött nem tudott semmit, így ez egy nagy ugrás részéről. :) De erről írtam [itt, hogy Ne es ebbe a hibába!](/tan-osveny/bevezetes/nehez-szakma#ne-es-ebbe-a-hibaba).
+# Válasszunk nyelvet
+Egy nyelv választás fontos tényező is lehet, ha hangokra hallgat és nem szakember mondja meg az irányt. Az utóbbi is tévesnek ítélem meg, mert ne egy random ember mondja meg, hogy mit szeretne a tanuló. Legrosszabb esetben a kedvét is elveszi. Ezért, én bemutatom a környezetet, hogy mik a jelenleg használtak vagy aktívan tanult nyelvek. Milyen maga a közösség? Melyik nyelv mire jó?
 
-[//]: # (TODO: Írni a linuxról)
-Az IT-ban a programozási ismeret egy alapvető dolog, ahogy a Linux rendszer ismerete is. Linux-ról később fogok írni.
+Amúgy megsúgom, hogy a legtöbb nyelv [Turing](https://hu.wikipedia.org/wiki/Turing-g%C3%A9p)-teljes. Azaz, minden megvalósítható benne, mint a másikban. Tehát, nem is maga a nyelv lesz a kérdés, hanem a nyelv köré épített és hozzáadott bővítések (könyvtárak) és maga a nyelv viselkedési jellemzője.
 
-> [!NOTE]
-> Mindig lesz nálad jobb vagy okosabb szakember, akármilyen szakmát is űzől és mennyi ideje.
+Máshogy működik és máshogyan kell használni egy Java nyelvet, mint egy Go-t, még ha ugyanazt is szeretnéd megvalósítani. Tehát, úgy tudnám összehasonlítani, mint A-ból B-be mennél, de egyszer autót használsz utazáshoz, máskor meg egy motort. A KRESZ szabályok 99%-ban ugyanaz, csak a használt eszköz más.
+
+Igen, hogy meglepő legyen az [Excel is Turing-teljes](https://prog.hu/hirek/5648/turing-teljes-lett-az-excel-o-lehet-az-uj-legnepszerubb-programozasi-nyelv) lett... :raised_eyebrow: Tehát, papíron weboldal-t is lehetne benne írni. Az már, másik kérdés, hogy mennyire alkalmas rá. :)
+
 
 
 ## Nyelv választás
@@ -19,7 +20,7 @@ Nézzük a [StackOverflow - 2024 Developer Survey](https://survey.stackoverflow.
 Ha megnézzük a nyelveket, [amikben szakemberek fejlesztenek](https://survey.stackoverflow.co/2024/technology#most-popular-technologies-language-prof) látjuk, hogy eléggé eltér a [tanuló nyelvektől](https://survey.stackoverflow.co/2024/technology#most-popular-technologies-language-learn).
 
 ### Fejlesztők által használt
-![StackOverflow - 2024 Developer Survey - Professional Developers](../../public/img/program/surway24-prof.png)
+![StackOverflow - 2024 Developer Survey - Professional Developers](../public/img/program/surway24-prof.png)
 
 Így ránézve megtévesztő egy összehasonlítási alap. Miért? A fejlesztők ~64%-a használja a `JS` JavaScript-et. Ennek azaz oka, hogy a legtöbb felület beleértve ez az oldal is `JS`-eket futtat. Böngészők eredetileg nem is nagyon tudnak mást. _(Most a WebAssembly-re nem térek ki.)_ Így aki úgynevezett `FrontEnd` fejlesztő szeretne lenni (amit a felhasználó lát), számára a `JS` ismerete majd-hogy-nem elengedhetetlen. Így ebből a kötelezőségből, a `JS` nyelvre felhajtó erőként hat.
 
@@ -28,14 +29,14 @@ Az [SQL](https://hu.wikipedia.org/wiki/SQL) is hasonló cipőben jár csak `Back
 
 Szorosan követi a `HTML/CSS`. Hát ez egy kakukk tojás... :sweat_smile: A `HTML` és a `CSS` egy [leíró dokumentum](https://hu.wikipedia.org/wiki/HTML), nem pedig programozási nyelv. `HTML` a felület strukturáját adja, míg a `CSS` annak stílusát. Ha megnyitsz egy tetszőleges oldalt egy böngészőben `F12`-vel előtudod hozni a "vizsgálat"-ot, ahol megtudod nézni hogy épül fel az oldal. Ha bele nyúlkálsz az oldal is változik annak megfelelően. Ezzel lehet azt a látszatot kelteni, hogy pl. egy hír rólad szól vagy átírod a tartalmat, képet készítesz róla és ijesztgetsz másokat... De a valós tartalom ezzel nem változik. Egy oldal frissítéssel vissza áll az eredeti formájára.
 
-![Google HTML](../../public/img/program/google-html.png)
+![Google HTML](../public/img/program/google-html.png)
 
-![Google Result](../../public/img/program/google-edited.png)
+![Google Result](../public/img/program/google-edited.png)
 
 A `PY`, ami a `Python` és a többi nyelv, már közelebb áll a valósághoz, mármint a program nyelvekhez és persze az első helyezett a `JS` is az.
 
 ### Nyelvek amit tanulnak
-![StackOverflow - 2024 Developer Survey - Learning to Code](../../public/img/program/surway24-learn.png)
+![StackOverflow - 2024 Developer Survey - Learning to Code](../public/img/program/surway24-learn.png)
 
 Látszik, hogy most mindenki a `Python`-ra izgul. Ez nem véletlen és több oka van. Egyrészt a `Python` egy univerzális nyelv (köhöm.. a többi is az), amit viszonylag könnyű elsajátítani és sokan is ajánlgatják. Továbbá [BigData](https://lexunit.hu/blog/mi-az-a-big-data-es-mire-hasznaljuk/) szakirányban vagy `AI` azaz mesterséges intelligencia körökben is sűrűn használt a kiforrott eszközei miatt, mint más nyelv.
 
@@ -52,7 +53,7 @@ Tapasztalt szakemberek is folyamatosan kutatják, hogy melyik technológia, hogy
 Ha gondolod meghazudtolhatsz. Én megengedem, hogy hugyozz széllel szemben.
 
 #### StackOverflow Trends Chart
-![StackOverflow Trends Chart](../../public/img/program/stackoverflow-trends-chart.png)
+![StackOverflow Trends Chart](../public/img/program/stackoverflow-trends-chart.png)
 
 A StackOverflow egy szakmai gyakorikérdések lényegében. Minden féle nyelvvel, technológiával kapcsolatban van kérdés fejlesztői és üzemeltetői oldalon. Amit most hoztam nektek az egy aktivitási, kérdés feltevési ábra, hogy hónapról hónapra egyes nyelvekkel kapcsolatban hogyan alakult a kérdés szám a StackOverflow-n az összes kérdéshez arányosítva.
 Ebből is kikövetkeztethető, hogy világ szinten melyik nyelv van inkább használva vagy kísérletezés alatt.
@@ -71,11 +72,11 @@ A [Google Trends](https://trends.google.com/trends/explore) is hasonló, csak it
 
 Hoztam innen is 2 képet. Az egyik Magyarországon rákeresett nyelvek, míg a másik a világszerte. Plusz, ha beállítok egy kategóriát a magyar vonalra, máris a Java nyelv kerül első helyre.
 
-![Google Trends - HUN](../../public/img/program/google-trends-hun.png)
+![Google Trends - HUN](../public/img/program/google-trends-hun.png)
 
-![Google Trends - World Wide](../../public/img/program/google-trends-ww.png)
+![Google Trends - World Wide](../public/img/program/google-trends-ww.png)
 
-![Google Trends - HUN Categorized](../../public/img/program/google-trends-hun-categorized.png)
+![Google Trends - HUN Categorized](../public/img/program/google-trends-hun-categorized.png)
 
 #### Salary Guide-ok
 A `Salary Guide`, magyar "bér iránytű" is amolyan piaci elemzés és fizetések össze-matekozása. Nem csak a – szerintük - elérhető fizetéseket osztják meg, hanem a piaci helyzetet. Itt most hozok 3 oldalt
