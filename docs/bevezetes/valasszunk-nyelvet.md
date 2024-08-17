@@ -4,7 +4,7 @@ lastUpdated: 2024-08-16
 ---
 
 # Válasszunk nyelvet
-Egy nyelv választás fontos tényező is lehet, ha hangokra hallgat és nem szakember mondja meg az irányt. Az utóbbi is tévesnek ítélem meg, mert ne egy random ember mondja meg, hogy mit szeretne a tanuló. Legrosszabb esetben a kedvét is elveszi. Ezért, én bemutatom a környezetet, hogy mik a jelenleg használtak vagy aktívan tanult nyelvek. Milyen maga a közösség? Melyik nyelv mire jó?
+Egy nyelv választás fontos tényező is lehet, ha ilyen-olyan emberek felerősített hangjaira hallgat és nem szakember mondja meg az irányt. Az utóbbi is tévesnek ítélem meg, mert ne egy random ember mondja meg, hogy mit szeretne tanulni a tanuló. Én se és más se lát bele másnak a fejébe, hogy mit képzelt el. Legrosszabb esetben a kedvét is elveszítheti. Ezért, én bemutatom a környezetet, hogy mik a jelenleg használtak vagy aktívan tanult nyelvek. Melyik nyelv mire jó.
 
 Amúgy megsúgom, hogy a legtöbb nyelv [Turing](https://hu.wikipedia.org/wiki/Turing-g%C3%A9p)-teljes. Azaz, minden megvalósítható benne, mint a másikban. Tehát, nem is maga a nyelv lesz a kérdés, hanem a nyelv köré épített és hozzáadott bővítések (könyvtárak) és maga a nyelv viselkedési jellemzője.
 
