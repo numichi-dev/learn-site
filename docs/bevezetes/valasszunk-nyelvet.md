@@ -40,7 +40,7 @@ A `PY`, ami a `Python` és a többi nyelv, már közelebb áll a valósághoz, m
 
 Látszik, hogy most mindenki a `Python`-ra izgul. Ez nem véletlen és több oka van. Egyrészt a `Python` egy univerzális nyelv (köhöm.. a többi is az), amit viszonylag könnyű elsajátítani és sokan is ajánlgatják. Továbbá [BigData](https://lexunit.hu/blog/mi-az-a-big-data-es-mire-hasznaljuk/) szakirányban vagy `AI` azaz mesterséges intelligencia körökben is sűrűn használt a kiforrott eszközei miatt, mint más nyelv.
 
-Ennek ellenére, miért nem ajánlom mégse kezdő nyelvnek? Mert nem fekteti le az alapokat, hanem azokat átvállalja, elrejti, leegyszerűsíti és így csábít át a "sötét oldalra", hogy azokat ne is tanuld meg. (Most jó sok ellenséget szereztem magamnak... :D) Persze a `Python`-t is előveszem, mikor majd algoritmusokat nézünk. Fogjuk használni. :wink:
+Ennek ellenére, miért nem ajánlom mégse kezdő nyelvnek? Mert nem fekteti le az alapokat, hanem azokat átvállalja, elrejti, leegyszerűsíti és így csábít át a "sötét oldalra", hogy azokat ne is tanuld meg. (Most jó sok ellenséget szereztem magamnak... :D) Ha ragaszkodsz hozzá, akkor úgy is ezzel fogsz kezdeni. Ez a te döntésed. Persze a `Python`-t is előveszem, mikor majd algoritmusokat nézünk. Fogjuk használni. :wink:
 
 A `HTML/CSS` és a `JS`-ről már meséltem. Azonos az aránya is ~60.4%, mert össze függ. FrontEnd, felhasználói felület ugye.
 
@@ -141,6 +141,90 @@ Rövid leírás róluk:
 > A Radar segít a projektek során felfedezni az új lehetőségeket és a bevált módszertanokat.
 
 ## Nyelvek
+Az alábbi nyelvek leírását `ChatGPT`-vel generáltattam, ellenőriztem és ismereteim alapján korrigáltam. Tévedések előfordulhatnak benne, ha találsz még is jelezd nekem.
+
+Számos más nyelvet nem említettem, mint pl.
+- `SQL`, mert az relációs adatbázis nyelvezete, amivel minden esetben fogsz találkozni bármelyik nyelvet is válaszd.
+- A `Bash/Shell` linux vagy macOS rendszerek script nyelvei, de annak is számos variánsa is van (pl. `csh`, `ksh`, `zsh`). Linux rendszereknél fogjuk elővenni.
+
+Programozás alapok avagy kezdő szintnél mindegyiket kézbe fogom venni.
+
+### C
+A C programozási nyelvet az 1970-es évek elején fejlesztette ki Dennis Ritchie a Bell Labs-nál. Ez egy általános célú, magas szintű nyelv, amely a hardverközeli programozásra is alkalmas, és azóta számos modern programozási nyelv alapjául szolgált.
+
+A C nyelv jellemzői közé tartozik a gyors és hatékony kód, amely lehetővé teszi nagy teljesítményt igénylő alkalmazások készítését. Emellett a nyelv szintaxisa egyszerű, de rugalmasságot biztosít a programozónak, valamint lehetővé teszi a programok könnyű portolását különböző platformokra. C-ben különféle programokat lehet írni, beleértve operációs rendszereket, beágyazott rendszereket _(azaz robot porszívók, okos hűtők, ... mindenre amire "okos" szó ráhúzgató)_, alkalmazásokat, hálózati programokat, és fordítókat.
+
+### C++
+A C++ programozási nyelvet Bjarne Stroustrup fejlesztette ki az 1980-as évek elején, a C nyelv kiterjesztéseként. A C++ megőrzi a C nyelv hatékonyságát, miközben új, magasabb szintű programozási eszközöket biztosít, mint például az objektumorientált programozás támogatása.
+
+A C++ egyik fő jellemzője az objektumorientáltság, amely lehetővé teszi az adatok és funkciók osztályokba és objektumokba szervezését. Emellett a C++ támogatja a generikus programozást is (de hívja `template`-nek is), amely rugalmasabb és újra felhasználhatóbb kódot eredményez. A nyelv szintaxisa a C-hez hasonló, de több kényelmi funkcióval bővült, például a kivételkezeléssel és a dinamikus memóriakezeléssel.
+
+A C++-t széles körben használják különféle területeken, mint például játékfejlesztés (így [Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine) is), szoftverfejlesztés, grafikai -, és nagy teljesítményű számítástechnikai alkalmazások. Ez a nyelv ideális választás, ha hatékony, mégis rugalmas megoldásokat szeretnénk fejleszteni, és a C nyelv ismeretével rendelkező programozók számára természetes tovább fejlődést kínál.
+
+### Rust
+A Rust programozási nyelvet 2006-ban kezdték el fejleszteni és 2010-ben mutatta be Mozilla Research, és 2015-ben adták ki hivatalosan. Rustot úgy tervezték, hogy biztonságos és hatékony legyen, különösen a memóriakezelés terén, miközben magas szintű programozási lehetőségeket kínál. A nyelv célja a C és C++ nyelvek teljesítményének és rugalmasságának megtartása, de biztonságosabb formában.
+
+Rust egyik fő jellemzője a memória biztonság, amelyet a nyelv tulajdonlási rendszerén keresztül biztosít. Ez a rendszer megakadályozza a null pointer és versenyhelyzetek kialakulását, anélkül, hogy szükség lenne egy szemétgyűjtő (garbage collector) használatára. Emellett Rust támogatja a párhuzamos programozást és a makró alapú metaprogramozást is, amelyek segítségével hatékony és biztonságos kódot lehet írni.
+
+Rustot széles körben használják rendszerszintű programozásra, például operációs rendszerek és beágyazott rendszerekben is. Mindezek mellet támogatja a webfejlesztést is.
+
+### Go
+A Go programozási nyelvet (vagy GoLang) a Google fejlesztette ki 2007-ben, és 2009-ben mutatták be hivatalosan. A nyelv célja, hogy egyszerű, hatékony és könnyen olvasható legyen, miközben modern megoldásokat kínál a nagy méretű, elosztott rendszerek számára.
+
+Go egyik fő jellemzője az egyszerűség és a tiszta szintaxis, amely megkönnyíti a kód olvashatóságát és karbantartását. A nyelv beépített párhuzamossági támogatást kínál a gorutinok révén, amelyek lehetővé teszik a könnyű, de hatékony párhuzamos programozást. Emellett a Go gyors fordítási idővel rendelkezik, annak ellenére, hogy szemétgyűjtővel (garbage collector) is rendelkezik, amennyiben szükség van rá.
+
+A Go nyelvet elsősorban szerveroldali alkalmazások, mikroszolgáltatások, és felhőalapú infrastruktúrák fejlesztésére használják. A nyelv ideális választás olyan projektekhez, ahol a skálázhatóság, a párhuzamosság és az egyszerűség kulcsfontosságú, és egyre népszerűbbé válik a modern szoftverfejlesztési ökoszisztémában.
+
+### Java
+A Java programozási nyelvet 1995-ben mutatta be a Sun Microsystems (ma az Oracle tulajdona), és azóta az egyik legnépszerűbb nyelvvé vált a világon. A Java-t úgy tervezték, hogy platformfüggetlen legyen, így a "Write Once, Run Anywhere" (írj meg egyszer, futtasd bárhol) elvet követi, ami azt jelenti, hogy a Java-ban írt programok különböző rendszereken is futtathatók változtatás nélkül.
+
+Java egyik fő jellemzője az objektumorientált programozás támogatása, amely lehetővé teszi a kód modularitását és újra felhasználhatóságát. Emellett Java rendelkezik egy szemétgyűjtővel (garbage collector), amely automatikusan kezeli a memóriát, így csökkentve a memóriaszivárgások kockázatát. A Java szintaxisa C++ alapú, de egyszerűbb és biztonságosabb, mivel például nem támogatja a közvetlen memóriakezelést pointerekkel.
+
+A Java nyelvet széles körben használják vállalati alkalmazások, mobil alkalmazások (különösen Android), webalkalmazások, és nagy teljesítményű szerveroldali rendszerek fejlesztésére. A Java megbízhatósága, skálázhatósága és a hozzá tartozó kiterjedt ökoszisztéma miatt a nyelv ideális választás komplex, hosszú távú projektekhez.
+
+### Kotlin
+A Kotlin programozási nyelvet a JetBrains fejlesztette ki, és 2011-ben jelent meg először. Kotlin egy modern, általános célú nyelv, amelyet úgy terveztek, hogy egyszerre legyen biztonságos, kifejező és kompatibilis a már meglévő Java ökoszisztémával. A nyelv különösen népszerűvé vált az Android fejlesztésben, miután 2017-ben a Google hivatalosan is támogatta Android fejlesztési nyelvként.
+
+Kotlin egyik fő jellemzője a tömör és olvasható szintaxis, amely csökkenti a kód mennyiségét, miközben növeli a kód biztonságát és karbantarthatóságát. A nyelv olyan modern funkciókat kínál, mint a nullbiztonság, a kiterjesztési függvények és a magas szintű funkcionális programozási lehetőségek. Kotlin teljesen interoperábilis a Java-val, ami azt jelenti, hogy Java kódot és könyvtárakat zökkenőmentesen lehet használni Kotlin projektekben, valamint Kotlin kódot is be lehet ágyazni meglévő Java alapú rendszerekbe.
+
+Kotlin széles körben használatos Android alkalmazások fejlesztésében, de a szerveroldali fejlesztés, webfejlesztés és desktop alkalmazások területén is egyre népszerűbb. A nyelv ideális választás mind új projektekhez, mind pedig meglévő Java projektek modernizálásához, mivel kombinálja a modern programozási nyelvek előnyeit a Java széles körű támogatottságával és stabilitásával.
+
+### Python
+A Python programozási nyelvet Guido van Rossum fejlesztette ki, és 1991-ben jelent meg először. Python-t úgy tervezték, hogy könnyen olvasható és tanulható legyen, miközben erőteljes és sokoldalú megoldásokat kínál a programozás különböző területein. A nyelv egyszerű szintaxisa és nagyfokú olvashatósága miatt különösen népszerű mind kezdők, tapasztalt fejlesztők és kutatók körében.
+
+Python egyik fő jellemzője a dinamizmus és az értelmezett (interpreted) természet, ami azt jelenti, hogy a kódot futtatás közben értelmezi a Python fordító, és nincs szükség előzetes fordításra. Ez gyors fejlesztési ciklusokat tesz lehetővé. A nyelv gazdag standard könyvtárai és a hatalmas közösségi támogatás révén Python alkalmas szinte bármilyen típusú alkalmazás fejlesztésére, a webfejlesztéstől kezdve az adatelemzésen át a mesterséges intelligenciáig.
+
+A Python nyelvet széles körben használják különféle területeken, beleértve a webfejlesztést, adatelemzést, tudományos számításokat, automatizálást, és a mesterséges intelligenciát. A nyelv egyszerűsége és rugalmassága, valamint az erős közösségi támogatás miatt Python ideális választás mind gyors prototípusok készítéséhez, mind pedig nagy skálájú, komplex projektek fejlesztéséhez.
+
+### PHP
+A PHP (Hypertext Preprocessor) programozási nyelvet Rasmus Lerdorf fejlesztette ki 1994-ben, és elsősorban dinamikus weboldalak és webalkalmazások készítésére tervezték. A PHP eredetileg egy egyszerű eszközkészletként indult, de az évek során egy teljes értékű szerveroldali programozási nyelvvé fejlődött, amelyet széles körben használnak a webfejlesztésben.
+
+PHP egyik fő jellemzője, hogy közvetlenül beágyazható HTML kódba, ami megkönnyíti a dinamikus tartalmak létrehozását és a szerveroldali logika kezelését. A nyelv egyszerű és gyorsan elsajátítható, ami különösen vonzóvá teszi a kezdő fejlesztők számára. Emellett a PHP számos beépített függvényt és könyvtárat kínál, amelyek megkönnyítik a webes műveleteket, mint például adatbázis-kezelést, fájlkezelést, és form-kezelést.
+
+A PHP nyelvet elsősorban weboldalak és webalkalmazások fejlesztésére használják, és számos népszerű tartalomkezelő rendszer, például a WordPress, a Drupal, és a Joomla is PHP alapú. A nyelv kiváló választás mind egyszerű, mind összetett webprojektekhez, köszönhetően széles körű támogatottságának és a hozzá tartozó kiterjedt ökoszisztémának.
+
+
+### JavaScript / TypeScript
+> [!WARNING]
+> Nem összekeverendő a Java a JavaScript-el!!!
+
+A JavaScript programozási nyelvet Brendan Eich fejlesztette ki 1995-ben, és azóta az egyik legfontosabb nyelvvé vált a webfejlesztésben. JavaScript egy kliensoldali szkriptnyelv, amelyet elsősorban interaktív és dinamikus weboldalak létrehozására használnak, de a Node.js megjelenésével szerveroldali fejlesztésre is alkalmassá vált.
+
+JavaScript egyik fő jellemzője a rugalmasság és a könnyű beépíthetőség a HTML-be, ami lehetővé teszi a weboldalak viselkedésének és megjelenésének dinamikus módosítását. A nyelv aszinkron programozási képességei, például az ígéretek (promises) és az async/await funkciók, hatékonyan kezelik a hálózati műveleteket és más időigényes feladatokat. JavaScriptet széles körben támogatják a böngészők, és rengeteg könyvtár és keretrendszer (pl. React, Angular, Vue.js) épül rá, amelyek megkönnyítik a fejlesztést.
+
+A TypeScript, amelyet a Microsoft fejlesztett ki, a JavaScript egy típusos szupersetje, amely hozzáad statikus típusellenőrzést és egyéb fejlett programozási eszközöket. A TypeScript célja, hogy a nagyobb és bonyolultabb projektek fejlesztését biztonságosabbá és kezelhetőbbé tegye, miközben teljes mértékben kompatibilis marad a JavaScript-tel. A TypeScript különösen népszerű a nagyobb alkalmazások fejlesztésében, mivel segít elkerülni a típushibákat és elősegíti a kód karbantarthatóságát.
+
+### HTML és CSS
+A HTML (Hypertext Markup Language) és a CSS (Cascading Style Sheets) a webfejlesztés alapvető technológiái, amelyek a weboldalak szerkezetét és megjelenését határozzák meg.
+
+**HTML**, a weboldalak szerkezetének alapját képezi, és lehetővé teszi a szövegek, képek, hivatkozások és egyéb tartalmak strukturált megjelenítését a böngészőkben. HTML egy jelölőnyelv, amely címkéket (tags) használ a dokumentum elemeinek azonosítására és szervezésére, például `<h1>`, `<p>`, `<a>`, és `<img>`. Az HTML5 verzió új elemeket és API-kat is bevezetett, amelyek javítják a multimédiás tartalmak kezelését és a webalkalmazások funkcionalitását.
+
+**CSS** a HTML elemek megjelenésének és elrendezésének szabályozására szolgál. CSS lehetővé teszi a weboldalak stílusának, színének, betűtípusának és elrendezésének testre szabását anélkül, hogy a HTML szerkezetét módosítani kellene. A CSS használata révén a webfejlesztők rugalmasan és hatékonyan alakíthatják ki a weboldalak kinézetét, például a rácsok (grid) és flexbox rendszerek segítségével, valamint média lekérdezésekkel (media queries) alkalmazkodhatnak különböző képernyőméretekhez.
+
+A HTML és CSS kombinációja lehetővé teszi az interaktív és vizuálisan vonzó weboldalak létrehozását. Míg a HTML a weboldalak tartalmát és struktúráját biztosítja, addig a CSS a megjelenést és a dizájnt kezeli. Erre épül rá a már említett JavaScript, ami dinamikussá teszt azt.
+
+
+## Válasszunk!
 
 Hát, akkor válasszunk nyelvet. Nem lesz egyszerű. Ha nem olvastátok el a Hays POZÍCIÓK részét, akkor most ide bevágom.
 
@@ -154,20 +238,6 @@ Most a Python adná magát, hogy az egy jó irány, mint a StackOverflow felmér
 Ha legjobban fizető témát nézzük, akkor a Python mellet marad a Java és a FrontEnd.
 
 Maga a választás nem egyszerű. De, nem is mondom, hogy most kell választani. Úgy is úgy terveztem, hogy az oktató vagy ismeret terjesztő oldalamon több nyelvet veszek elő és párhuzamosan tanuljuk őket, míg ténylegesen el nem ágaznak a nyelvi egyediségei miatt. Egyébként, ha egy nyelvet megtanultál ténylegesen, onnantól olyan nagy különbség nem lesz a másik nyelvvel kapcsolatban.
-Tehát amit használni fogunk:
-
-- C - Hardver közeli nyelv, számos Operációs rendszert ebben írtak.
-- Rust - Ez a másik felkapott nyelv, ami a memória biztonságáról híres. Hogy ledobjam az atomot a ["Egyesült Államok Nemzetbiztonsági Ügynöksége" is szorgalmazza e nyelv használatát](https://www.hwsw.hu/hirek/65391/rust-programozas-nsa-amerikaiegyesultallamok-memoriakezeles-utmutato-kodolas-fejlesztes.html).
-- Java - Nagy vállalatok előszeretettel alkalmazzák és számos Java fejlesztőt keresnek itthon is. HWSW valamely podcast-jában hangzott el, hogy "Magyarország Java nagy hatalom", de már nem vagyok benne biztos... Mármint, hogy HWSW-n hallottam-e ezt.
-- Kotlin (Java variánsát) - Java-val 99.99%-van kompatibilis nyelv.
-- Go - Ez sok térben eltér a többi nyelvtől, de viszonylag új és egyszerű a nyelvezete, szerintem. Viszonylag új, mivel 2009-ben jött ki az első verzió.
-- Python - Szerintem már kiveséztük
-- PHP - Webfejlesztés örökzöldje.
-- JavaScript - Ez egy vegyes nyelv. NodeJS-el tud szerver oldali is lenni, de böngésző is ezt használja. Meg számos mobilos multiplatform-os keretrendszer is. Elég sok helyen szembe jöhet.
-- TypeScript - típusos JavaScript
-- HTML/CSS - HTML és CSS nélkül kvázi nincs felület se weboldal. Kötelező elem!
-
-Tehát durván mondva lesz 8 nyelv + 1 a webes vonal a HTML/CSS miatt. De vannak átfedések.
 
 > [!INFO]
 > Amúgy a Rust nyelvet én se ismerem. Ezen oldal írásával egybe terveztem megtanulni.
