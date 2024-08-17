@@ -8,10 +8,9 @@ Egy nyelv választás fontos tényező is lehet, ha hangokra hallgat és nem sza
 
 Amúgy megsúgom, hogy a legtöbb nyelv [Turing](https://hu.wikipedia.org/wiki/Turing-g%C3%A9p)-teljes. Azaz, minden megvalósítható benne, mint a másikban. Tehát, nem is maga a nyelv lesz a kérdés, hanem a nyelv köré épített és hozzáadott bővítések (könyvtárak) és maga a nyelv viselkedési jellemzője.
 
-Máshogy működik és máshogyan kell használni egy Java nyelvet, mint egy Go-t, még ha ugyanazt is szeretnéd megvalósítani. Tehát, úgy tudnám összehasonlítani, mint A-ból B-be mennél, de egyszer autót használsz utazáshoz, máskor meg egy motort. A KRESZ szabályok 99%-ban ugyanaz, csak a használt eszköz más.
+Máshogy működik és máshogyan kell használni egy Java nyelvet, mint egy Go-t, még ha ugyanazt is szeretnéd megvalósítani. Tehát, úgy tudnám összehasonlítani, mint A-ból B-be mennél, de egyszer autót használsz utazáshoz, máskor meg egy motort. A KRESZ szabályok 95%-ban ugyanaz, csak a használt eszköz más.
 
 Igen, hogy meglepő legyen az [Excel is Turing-teljes](https://prog.hu/hirek/5648/turing-teljes-lett-az-excel-o-lehet-az-uj-legnepszerubb-programozasi-nyelv) lett... :raised_eyebrow: Tehát, papíron weboldal-t is lehetne benne írni. Az már, másik kérdés, hogy mennyire alkalmas rá. :)
-
 
 
 ## Nyelv választás
@@ -41,6 +40,8 @@ A `PY`, ami a `Python` és a többi nyelv, már közelebb áll a valósághoz, m
 Látszik, hogy most mindenki a `Python`-ra izgul. Ez nem véletlen és több oka van. Egyrészt a `Python` egy univerzális nyelv (köhöm.. a többi is az), amit viszonylag könnyű elsajátítani és sokan is ajánlgatják. Továbbá [BigData](https://lexunit.hu/blog/mi-az-a-big-data-es-mire-hasznaljuk/) szakirányban vagy `AI` azaz mesterséges intelligencia körökben is sűrűn használt a kiforrott eszközei miatt, mint más nyelv.
 
 Ennek ellenére, miért nem ajánlom mégse kezdő nyelvnek? Mert nem fekteti le az alapokat, hanem azokat átvállalja, elrejti, leegyszerűsíti és így csábít át a "sötét oldalra", hogy azokat ne is tanuld meg. (Most jó sok ellenséget szereztem magamnak... :D) Ha ragaszkodsz hozzá, akkor úgy is ezzel fogsz kezdeni. Ez a te döntésed. Persze a `Python`-t is előveszem, mikor majd algoritmusokat nézünk. Fogjuk használni. :wink:
+
+Ha csak azért akarsz Python-ozni, mert megfogott a `AI hype`, itt lekopogom, hogy gyorsan falnak fogsz ütközni. Számos követelménye van az AI fejlesztésnek. Először a programozási alapok legyenek meg, ezután legyél tisztában az algoritmusokkal és adatszerkezetekkel. Ez után vagy párhuzamosan ismerd meg a lineáris algebrát, valószínűségszámítást és statisztikát. Mivel adatokkal kell foglalkozni, így a matematikai alapokkal adatfeldolgozás és adatkezelés módszerek ismereteinek elsajátítására lesz szükséged. Aztán gyakorolhatsz a `NumPy`, `TensorFlow` és egyéb könyvtárakkal. Persze további szakirodalom olvasás sem árt, hogy mi az a `Deep Learning` vagy a `Neural Network`. Hosszú az ide vezető út.
 
 A `HTML/CSS` és a `JS`-ről már meséltem. Azonos az aránya is ~60.4%, mert össze függ. FrontEnd, felhasználói felület ugye.
 
@@ -250,9 +251,3 @@ Platform független rendszerek:
 - [React Native](https://reactnative.dev/): a React keretrendszert használja és mobil-ra építi fel az alkalmazást.
 - [Ionic](https://ionicframework.com/): egy böngészős "webes" réteget képez, amin kb. bármit tudsz futtatni mint a böngészőben.
 - [Flutter](https://flutter.dev/): Ez egy kakuk tojás, mert Dart nyelvet használ.
-
-
-
-
-
-
