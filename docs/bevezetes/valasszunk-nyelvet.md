@@ -19,23 +19,23 @@ Nézzük a [StackOverflow - 2024 Developer Survey](https://survey.stackoverflow.
 Ha megnézzük a nyelveket, [amikben szakemberek fejlesztenek](https://survey.stackoverflow.co/2024/technology#most-popular-technologies-language-prof) látjuk, hogy eléggé eltér a [tanuló nyelvektől](https://survey.stackoverflow.co/2024/technology#most-popular-technologies-language-learn).
 
 ### Fejlesztők által használt
-![StackOverflow - 2024 Developer Survey - Professional Developers](../public/img/program/surway24-prof.png)
+![StackOverflow - 2024 Developer Survey - Professional Developers](../public/img/bevezetes/surway24-prof.png)
 
 Így ránézve megtévesztő egy összehasonlítási alap. Miért? A fejlesztők ~64%-a használja a `JS` JavaScript-et. Ennek azaz oka, hogy a legtöbb felület beleértve ez az oldal is `JS`-eket futtat. Böngészők eredetileg nem is nagyon tudnak mást. _(Most a WebAssembly-re nem térek ki.)_ Így aki úgynevezett `FrontEnd` fejlesztő szeretne lenni (amit a felhasználó lát), számára a `JS` ismerete majd-hogy-nem elengedhetetlen. Így ebből a kötelezőségből, a `JS` nyelvre felhajtó erőként hat.
 
 [//]: # (TODO: NoSQL-ről írni)
 Az [SQL](https://hu.wikipedia.org/wiki/SQL) is hasonló cipőben jár csak `BackEnd` azaz szerver oldalon. Azért van rá szükség, mert ezzel a nyelvezettel lehet kommunikálni a relációs adatbázisokkal. ([Több termék is van.](https://db-engines.com/en/ranking/relational+dbms)) Angolul **D**ata**b**ase, röviden csak `DB`. Az adatbázisok arra használatosak, hogy hosszú távon tároljunk adatokat strukturált formában, hasonlóan a HDD vagy SSD-hez a saját fájljaidat vagy bármit amit lementenél. Ahogy a számítógépet kikapcsolod a nem lementett adatok elvesznek. Ez igaz a programokra is mikor leállnak, de ezt tapasztaltad már gondolom.
 
-Szorosan követi a `HTML/CSS`. Hát ez egy kakukk tojás... :sweat_smile: A `HTML` és a `CSS` egy [leíró dokumentum](https://hu.wikipedia.org/wiki/HTML), nem pedig programozási nyelv. `HTML` a felület strukturáját adja, míg a `CSS` annak stílusát. Ha megnyitsz egy tetszőleges oldalt egy böngészőben `F12`-vel előtudod hozni a "vizsgálat"-ot, ahol megtudod nézni hogy épül fel az oldal. Ha bele nyúlkálsz az oldal is változik annak megfelelően. Ezzel lehet azt a látszatot kelteni, hogy pl. egy hír rólad szól vagy átírod a tartalmat, képet készítesz róla és ijesztgetsz másokat... De a valós tartalom ezzel nem változik. Egy oldal frissítéssel vissza áll az eredeti formájára.
+Szorosan követi a `HTML/CSS`. Hát ez egy kakukk tojás... :sweat_smile: A `HTML` és a `CSS` egy [leíró dokumentum](https://hu.wikipedia.org/wiki/HTML), nem pedig programozási nyelv. `HTML` a felület strukturáját adja, míg a `CSS` annak stílusát. Ha megnyitsz egy tetszőleges oldalt egy böngészőben `F12`-vel előtudod hozni a "vizsgálat"-ot, ahol megtudod nézni, hogy hogyan épül fel az oldal. Ha bele nyúlkálsz az oldal is változik annak megfelelően. Ezzel lehet azt a látszatot kelteni, hogy pl. egy hír rólad szól vagy átírod a tartalmat, képet készítesz róla és ijesztgetsz másokat... De a valós tartalom ezzel nem változik. Egy oldal frissítéssel vissza áll az eredeti formájára.
 
-![Google HTML](../public/img/program/google-html.png)
+![Google HTML](../public/img/bevezetes/google-html.png)
 
-![Google Result](../public/img/program/google-edited.png)
+![Google Result](../public/img/bevezetes/google-edited.png)
 
 A `PY`, ami a `Python` és a többi nyelv, már közelebb áll a valósághoz, mármint a program nyelvekhez és persze az első helyezett a `JS` is az.
 
 ### Nyelvek amit tanulnak
-![StackOverflow - 2024 Developer Survey - Learning to Code](../public/img/program/surway24-learn.png)
+![StackOverflow - 2024 Developer Survey - Learning to Code](../public/img/bevezetes/surway24-learn.png)
 
 Látszik, hogy most mindenki a `Python`-ra izgul. Ez nem véletlen és több oka van. Egyrészt a `Python` egy univerzális nyelv (köhöm.. a többi is az), amit viszonylag könnyű elsajátítani és sokan is ajánlgatják. Továbbá [BigData](https://lexunit.hu/blog/mi-az-a-big-data-es-mire-hasznaljuk/) szakirányban vagy `AI` azaz mesterséges intelligencia körökben is sűrűn használt a kiforrott eszközei miatt, mint más nyelv.
 
@@ -46,7 +46,7 @@ Ha csak azért akarsz Python-ozni, mert megfogott a `AI hype`, itt lekopogom, ho
 A `HTML/CSS` és a `JS`-ről már meséltem. Azonos az aránya is ~60.4%, mert össze függ. FrontEnd, felhasználói felület ugye.
 
 ### Egyéb statisztikák, források
-Tapasztalt szakemberek is folyamatosan kutatják, hogy melyik technológia, hogy fejlődik és melyik milyen problémára alkalmas. Itt fontos megemlítenem és egyben legyen alap tétel is, hogy problémára választunk eszközt/nyelvet, nem pedig egy nyelvel akarjunk mindent megoldani. Az utóbbi nem lesz optimális, azaz túlsok időt, energiát és pénzt éget el. Tehát, azaz ember "sikeres", aki kevesebb energia befektetéssel jobb eredményt tud előállítani. A kóklerek ki fognak hullani.
+Tapasztalt szakemberek is folyamatosan kutatják, hogy melyik technológia, hogy fejlődik és melyik milyen problémára alkalmas. Itt fontos megemlítenem és egyben legyen alap tétel is, hogy problémára választunk eszközt/nyelvet, nem pedig egy nyelvvel akarjunk mindent megoldani. Az utóbbi nem lesz optimális, azaz túlsok időt, energiát és pénzt éget el. Tehát, azaz ember "sikeres", aki kevesebb energia befektetéssel jobb eredményt tud előállítani. A kóklerek ki fognak hullani.
 
 > [!WARNING] Alap megközelítés
 > Problémára választunk eszközt! Vagy magadat szivatód vele.
@@ -54,7 +54,7 @@ Tapasztalt szakemberek is folyamatosan kutatják, hogy melyik technológia, hogy
 Ha gondolod meghazudtolhatsz. Én megengedem, hogy hugyozz széllel szemben.
 
 #### StackOverflow Trends Chart
-![StackOverflow Trends Chart](../public/img/program/stackoverflow-trends-chart.png)
+![StackOverflow Trends Chart](../public/img/bevezetes/stackoverflow-trends-chart.png)
 
 A StackOverflow egy szakmai gyakorikérdések lényegében. Minden féle nyelvvel, technológiával kapcsolatban van kérdés fejlesztői és üzemeltetői oldalon. Amit most hoztam nektek az egy aktivitási, kérdés feltevési ábra, hogy hónapról hónapra egyes nyelvekkel kapcsolatban hogyan alakult a kérdés szám a StackOverflow-n az összes kérdéshez arányosítva.
 Ebből is kikövetkeztethető, hogy világ szinten melyik nyelv van inkább használva vagy kísérletezés alatt.
@@ -73,11 +73,11 @@ A [Google Trends](https://trends.google.com/trends/explore) is hasonló, csak it
 
 Hoztam innen is 2 képet. Az egyik Magyarországon rákeresett nyelvek, míg a másik a világszerte. Plusz, ha beállítok egy kategóriát a magyar vonalra, máris a Java nyelv kerül első helyre.
 
-![Google Trends - HUN](../public/img/program/google-trends-hun.png)
+![Google Trends - HUN](../public/img/bevezetes/google-trends-hun.png)
 
-![Google Trends - World Wide](../public/img/program/google-trends-ww.png)
+![Google Trends - World Wide](../public/img/bevezetes/google-trends-ww.png)
 
-![Google Trends - HUN Categorized](../public/img/program/google-trends-hun-categorized.png)
+![Google Trends - HUN Categorized](../public/img/bevezetes/google-trends-hun-categorized.png)
 
 #### Salary Guide-ok
 A `Salary Guide`, magyar "bér iránytű" is amolyan piaci elemzés és fizetések össze-matekozása. Nem csak a – szerintük - elérhető fizetéseket osztják meg, hanem a piaci helyzetet. Itt most hozok 3 oldalt
@@ -189,6 +189,16 @@ A Kotlin programozási nyelvet a JetBrains fejlesztette ki, és 2011-ben jelent 
 Kotlin egyik fő jellemzője a tömör és olvasható szintaxis, amely csökkenti a kód mennyiségét, miközben növeli a kód biztonságát és karbantarthatóságát. A nyelv olyan modern funkciókat kínál, mint a nullbiztonság, a kiterjesztési függvények és a magas szintű funkcionális programozási lehetőségek. Kotlin teljesen interoperábilis a Java-val, ami azt jelenti, hogy Java kódot és könyvtárakat zökkenőmentesen lehet használni Kotlin projektekben, valamint Kotlin kódot is be lehet ágyazni meglévő Java alapú rendszerekbe.
 
 Kotlin széles körben használatos Android alkalmazások fejlesztésében, de a szerveroldali fejlesztés, webfejlesztés és desktop alkalmazások területén is egyre népszerűbb. A nyelv ideális választás mind új projektekhez, mind pedig meglévő Java projektek modernizálásához, mivel kombinálja a modern programozási nyelvek előnyeit a Java széles körű támogatottságával és stabilitásával.
+
+### C#
+> [!WARNING]
+> Nem fogom használni! A C# programozási nyelv legközelebb a Java és a C++ nyelvekhez áll.
+
+A C# (C sharp) programozási nyelvet a Microsoft fejlesztette ki, és 2000-ben mutatták be a .NET keretrendszer részeként. C# egy modern, objektumorientált nyelv, amelyet a biztonság, egyszerűség és hatékonyság jegyében terveztek, és kiválóan alkalmas a .NET és .NET Core platformokkal való együttműködésre.
+
+C# egyik fő előnye az objektumorientált programozás támogatása, amely lehetővé teszi a kód újrafelhasználását és karbantartását. A nyelv fejlett funkciókat kínál, mint a típusbiztonság, automatikus memória-kezelés a szemétgyűjtőn keresztül, valamint az aszinkron programozás támogatása az async/await kulcsszavakkal. A [.NET Core](https://github.com/dotnet/aspnetcore)-nak köszönhetően C# alkalmazások több platformon, például Windows, macOS és Linux rendszereken is futtathatók.
+
+C# különösen népszerű a játékkészítés terén, mivel a [Unity](https://unity.com/) játékmotor alapértelmezett nyelve, de széles körben használják webalkalmazások ([ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)), asztali szoftverek és [mobilalkalmazások](https://dotnet.microsoft.com/en-us/apps/mobile) fejlesztésére is. A C# ideális választás azoknak, akik megbízható és skálázható alkalmazásokat szeretnének létrehozni a Microsoft és a multiplatform ökoszisztémában.
 
 ### Python
 A Python programozási nyelvet Guido van Rossum fejlesztette ki, és 1991-ben jelent meg először. Python-t úgy tervezték, hogy könnyen olvasható és tanulható legyen, miközben erőteljes és sokoldalú megoldásokat kínál a programozás különböző területein. A nyelv egyszerű szintaxisa és nagyfokú olvashatósága miatt különösen népszerű mind kezdők, tapasztalt fejlesztők és kutatók körében.

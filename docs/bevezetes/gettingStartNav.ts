@@ -25,6 +25,10 @@ export const gettingStartNav: DefaultTheme.SidebarItem[] = [
                 text: 'Fejlesztői környezet',
                 link: '/bevezetes/fejlesztoi-kornyezet'
             },
+            {
+                text: 'Nyelvi környezet',
+                link: '/bevezetes/nyelvi-kornyezet'
+            },
         ]
     },
 ];

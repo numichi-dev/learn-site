@@ -23,7 +23,7 @@ Ezek megoldása avagy tolmácsolását úgy hívjuk, hogy **programozása**. Az 
 ## Programozás
 Azt kell, hogy mondjam, hogy minden elektronikával működő eszköz és azok komponensei nem úgy kommunikálnak, mint mi emberek. Hanem számos (nevezzük) ér párral kapcsolódnak egymáshoz. Gondolom láttál már ilyet.
 
-![Assembly](../public/img/program/nyak.jpg)
+![Assembly](../public/img/bevezetes/nyak.jpg)
 
 [//]: # (TODO: Írni majd CPU ról valamikor valahol)
 Tegyük fel, egy szobában tartózkodsz, gondolom rendelkezel egy lámpával. Jobb esetben a kapcsoló két állású, ami azt eredményezi, hogy ha van áram akkor a lámpa világítani fog és a másik állásban pedig megszünteted azt. A programozás során is hasonló történik a motorháztető alatt, de sokkalta bonyolultabban és rendkívül gyorsabban. Ezeket a működéseket elrejti a [CPU utasítás készlete](https://hu.wikipedia.org/wiki/Utas%C3%ADt%C3%A1sk%C3%A9szlet).
@@ -46,7 +46,7 @@ A CPU utasításról-utasításra hajtja ezeket végre és NEM tudja, hogy mit k
 > [!WARNING] Nem ellenőrzött tartalom!
 > Nem tudom, hogy az alábbi kép helyes-e. Ezt nem ellenőriztem, de a mondanivalóján nem változtat.
 
-![Assembly](../public/img/program/machine-vs-assembly.jpg)
+![Assembly](../public/img/bevezetes/machine-vs-assembly.jpg)
 
 ### Magas szintű programozási nyelvek
 A magas szintű programozási nyelvek skálája óriási. Ezek a nyelvek jobban absztaktálják (elrejtik) a számítógép _(de ide értünk minden más elektronikus eszközt is)_ hardverének működését, és inkább az emberi logikára koncentrálódik. Az ilyen nyelvek szintaxisa (nyelvezete) közelebb áll az ember által könnyebben megtanulható nyelvhez, így könnyebb megtanulni és megérteni is.
