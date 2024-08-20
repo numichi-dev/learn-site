@@ -12,7 +12,7 @@ Windows-on azért körülményesebb, de több módon is megoldható. Az egyik me
 ### VS Code beállítása
 
 > [!WARNING] Figyelem!
-> Ha nincs MSYS2-d vagy WSL-ed, akkor az egyiket lépd meg a VS Code beállítása elött, mert a VS Code-nak kelleni fog a fordító.
+> Ha nincs MSYS2-d vagy WSL2-ed, akkor az egyiket lépd meg a VS Code beállítása elött, mert a VS Code-nak kelleni fog a fordító.
 
 ### MSYS2 telepítés
 
@@ -76,7 +76,7 @@ Telepítő parancsot [itt](https://community.chocolatey.org/packages/openjdk/21.
 choco install openjdk --version=21.0.0
 ```
 
-#### Telepítés Debian/Ubuntu vagy Ubuntu WSL-en
+#### Telepítés Debian/Ubuntu vagy Ubuntu WSL2-en
 ```bash
 $ sudo apt serach openjdk
 ```

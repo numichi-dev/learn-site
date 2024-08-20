@@ -60,20 +60,25 @@ Windows-on azért már nem olyan egyszerű a történet. Az utóbbi időben a Wi
 
 Így két lehetséges (ha úgy tetszik) támogatást mutatok be, ami segít a programok telepítésében vagy használatában. Az egyik ilyen a Chocolatey, ami inkább hasonlít egy Linux repository-hoz vagy akár említhetném a GooglePlay-t vagy AppleStore-t. De a Chocolatey egy program gyűjtemény tároló, ami leegyszerűsíti a programok telepítését és menedzselését, beleértve annak frissítését is. Ez közvetlen a Windows-ra telepít és onnan használható.
 
-A másik lehetséges irány, amit bemutatok, a WSL (Windows Subsystem for Linux), ami egy virtuális Linux réteget hoz létre a Windows rendszerre. Így, az ide telepített programok Linux környezeten fog fugni, azaz az itt fordított program Linux környezeten fog végbe menni. Fontos, hogy a platform függő nyelvek Linux-os fordítást követően nem indulnak Windows-on és fordítva se. Azaz a Linux nem ismeri az `exe`-t.
+A másik lehetséges irány, amit bemutatok, a WSL2 (Windows Subsystem for Linux), ami egy virtuális Linux réteget hoz létre a Windows rendszerre. Így, az ide telepített programok Linux környezeten fog fugni, azaz az itt fordított program Linux környezeten fog végbe menni. Fontos, hogy a platform függő nyelvek Linux-os fordítást követően nem indulnak Windows-on és fordítva se. Azaz a Linux nem ismeri az `exe`-t.
 
-Én személy szerint mindkettőt használom és javaslom mindkettő beállítását Windows-on. A fejlesztéshez a WSL-t előnyben fogom részesíteni. Miért? Mert, ha szerver oldali alkalmazásról van szó, akkor 99%, hogy Linux vagy Linux alapú környezetben fog futni valós munkafolyamatok során is.
+[//]: # (TODO: Megvizsgálni majd, hogy WSL2 Hostolás esetében problémába ütközünk-e)
+> [!WARNING]
+> Nem tudom, hogyan fog viselkedni, ha WSL2-ben hosztolunk egy adott porton általunk írt projektet. Azt hogyan érjük el Windows oldalt böngészőből. Sose próbáltam. Majd, ha falba ütközünk, akkor majd korrigálom a leírást. Addigis első körben nem akadályoz mindent egy darabig.
 
-### WSL plugin
-Ha WSL-en szeretnél fejleszteni és futtatni, akkor a szükséged lesz a WSL plugin-ra. Először is keres rá a WSL plugin-ra. Ezt egy "legó" szerű iconon keresztül tudod megtenni. (Segítséget [itt](https://code.visualstudio.com/docs/editor/extension-marketplace) találsz.) Majd tenyerelj rá az `Install`-ra.
+### WSL2 plugin
+Ha WSL2-en szeretnél fejleszteni és futtatni, akkor a szükséged lesz a WSL2 plugin-ra. Először is keres rá a WSL2 plugin-ra. Ezt egy "legó" szerű iconon keresztül tudod megtenni. (Segítséget [itt](https://code.visualstudio.com/docs/editor/extension-marketplace) találsz.) Majd tenyerelj rá az `Install`-ra.
 
-![WSL Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl.png)
+![WSL2 Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl.png)
 
-Ha van WSL-ed már, akkor rátudsz csatlakozni.
+Ha van WSL2-ed már, akkor rátudsz csatlakozni.
 
-![WSL Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl-connect.png)
+![WSL2 Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl-connect.png)
 
-Majd bal-lent meg kell jelennie a `WSL: Ubuntu-24.04`-nek, vagy amire csatlakoztál.
+Majd bal-lent meg kell jelennie a `WSL2: Ubuntu-24.04`-nek, vagy amire csatlakoztál.
+
+> [!IMPORTANT]
+> Minden plugin telepítés elött csatlakoznod kell a WSL2-re, mert a plugin-t oda menti le és onnan használja. Ha későbbiekben nem használnád a WSL2-t, akkor a VS Code úgy látja, hogy nincs az a plugin feltelepítve!
 
 ## Windows Chocolatey telepítése
 
@@ -84,12 +89,12 @@ Telepítéséhez nyiss egy adminisztrációs joggal egy Windows terminált. Ezt 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-![WSL Plugin](../public/img/bevezetes/install/choco/choco-install-0.png)
+![WSL2 Plugin](../public/img/bevezetes/install/choco/choco-install-0.png)
 
-Kész is.
+Kész is. Majd az első `choco install` esetén előfordul, hogy eltart majd egy darabig.
 
 
-## Ubuntu WSL telepítés Windows-on
+## Ubuntu WSL2 telepítés Windows-on
 
 Teljes leírás [itt](https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/guides/install-ubuntu-wsl2/).
 
@@ -98,17 +103,17 @@ Teljes leírás [itt](https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/lat
 
 1. Nyiss egy rendszergazda jogosultsággal egy terminált
 
-    ![WSL Install Step -1](../public/img/bevezetes/install/windows-terminal-administrator_sign.png)
+    ![WSL2 Install Step -1](../public/img/bevezetes/install/windows-terminal-administrator_sign.png)
 
 2. Add ki a következő parancsot:
     ```powershell
     wsl.exe --install
     ```
-    ![WSL Install Step 0](../public/img/bevezetes/install/wsl/wsl-install-0_sign.png)
+    ![WSL2 Install Step 0](../public/img/bevezetes/install/wsl/wsl-install-0_sign.png)
 
 3. Ezt követően, ha Start menüben elindítod az Ubuntu-t, amit nem indulna el.
 
-   ![WSL Install Step 1](../public/img/bevezetes/install/wsl/wsl-install-1_sign.png)
+   ![WSL2 Install Step 1](../public/img/bevezetes/install/wsl/wsl-install-1_sign.png)
 
 Itt két lehetőséged van a további telepítésre. Windows Store-ban megkeresed az Ubuntu 24.04-et (vagy amelyik tetszik) és azon keresztül telepíted, vagy a következő parancsokat adod ki az adminisztrátorral elindított Windows terminálon:
 
@@ -116,32 +121,32 @@ Itt két lehetőséged van a további telepítésre. Windows Store-ban megkerese
     ```powershell
     wsl --list –online
     ```
-   ![WSL Install Step 2](../public/img/bevezetes/install/wsl/wsl-install-2_sign.png)
+   ![WSL2 Install Step 2](../public/img/bevezetes/install/wsl/wsl-install-2_sign.png)
 
 5. Én majd az Ubuntu 24.04-et fogom használni, így a lista bal oldali név azonosítót adom meg a következő parancsnak:
     ```powershell
     wsl --install -d Ubuntu-24.04
     ```
-   ![WSL Install Step 3](../public/img/bevezetes/install/wsl/wsl-install-3_sign.png)
+   ![WSL2 Install Step 3](../public/img/bevezetes/install/wsl/wsl-install-3_sign.png)
 
 Ez a folyamat a jelenlegi `Ubuntu` (ami az előző hosszú kiadású rendszer) mellé teszi fel az újabb hosszú kiadású rendszert. A folyamat végén kövesd a lentebb lévő `Mit csinálj, ha több Ubuntu-d van` pontot.
 
 6. Telepítés után kér minket a rendszer újra indítására. Ha ez kimarad, Ubuntu 24.04 is ugyanúgy megjelenik az alkalmazási listában, de nem fog elindulni.
 
-    ![WSL Install Step 4](../public/img/bevezetes/install/wsl/wsl-install-4_sign.png)
+    ![WSL2 Install Step 4](../public/img/bevezetes/install/wsl/wsl-install-4_sign.png)
 
 7. Újraindítást követően automatikusan elindul az Ubuntu konfiguráció (ha nem, csak indítsd el)
 
 8. Kér egy felhasználó nevet, ez tetszőleges lehet.
 
-   ![WSL Install Step 5](../public/img/bevezetes/install/wsl/wsl-install-5_sign.png)
+   ![WSL2 Install Step 5](../public/img/bevezetes/install/wsl/wsl-install-5_sign.png)
 
 
 9. Majd kérni fog UNIX jelszót, kétszer. **Nem fogja jelezni, ha gépelsz! Nem fogsz látni `*****`-okat.** Ez lesz a felhasználód jelszó. **Mindenképpen jegyezd meg**, mert később kelleni fog.
 
-    ![WSL Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-6_sign.png)
+    ![WSL2 Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-6_sign.png)
 
-Meg is vagyunk. Kaptunk egy Linux WSL-t. Most frissítsük.
+Meg is vagyunk. Kaptunk egy Linux WSL2-t. Most frissítsük.
 
 > [!NOTE]
 > Ha folyamat során `[Y/n]` kérdés elé állít, akkor az `y` az igen. A nagybetű annyit jelent, hogy ha nem írsz be `y` vagy `n`, hanem csak entert nyomsz, akkor a nagybetűs opció lesz érvényben.
@@ -162,27 +167,27 @@ $ sudo apt upgrade
 > [!NOTE]
 > A `sudo` annyit tesz, hogy "superuser do", azaz rendszergazda nevében adod ki a következő utasítást: `sudo <parancs(ok)>`. A `sudo` esetén alapértelmezett beállítás mellet mindig megkérdezi a felhasználói jelszavad, amennyiben van `sudo` jogod az adott parancshoz. _(Most lesz.)_ Ennek van egy lejárati ideje, azaz folyton `sudo`-t használva nem kéri be mindig a jelszót. Linux alatt, csak akkor `sudo`-z, ha máshogy nem megoldható az adott feladat. Pl. a telepítés és frissítés ilyen.
 
-Van egy jó meleg ropogós és friss Ubuntu WSL-ünk.
+Van egy jó meleg ropogós és friss Ubuntu WSL2-ünk.
 
-Mivel a WSL "szimbiózisban" él a Windows-al, így fájlok szintjén mindkét irányban elérhetővé válik a történet. Windows oldalt a Fájlkezelő-ből azonnal elérhető a linux mappa struktrája, de a linux-ból is a `C:/` és a többi meghajtó. Mivel nekem van 3 is, így a `/mnt/c` alatt lesz a `C:/`, ami zöld alapon kék betűvel jelez.
+Mivel a WSL2 "szimbiózisban" él a Windows-al, így fájlok szintjén mindkét irányban elérhetővé válik a történet. Windows oldalt a Fájlkezelő-ből azonnal elérhető a linux mappa struktrája, de a linux-ból is a `C:/` és a többi meghajtó. Mivel nekem van 3 is, így a `/mnt/c` alatt lesz a `C:/`, ami zöld alapon kék betűvel jelez.
 
-![WSL Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-7_sign.png)
+![WSL2 Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-7_sign.png)
 
-![WSL Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-8_sign.png)
+![WSL2 Install Step 6](../public/img/bevezetes/install/wsl/wsl-install-8_sign.png)
 
 ### Mit csinálj, ha:
 
 #### Több Ubuntu-d van, de egyet szeretnél:
-A fenti példában mikor én csináltam, egyszerre van jelen a 22.04 és a 24.04. Ubuntu-ból félévente jelenik meg új verzió, de 2 évente van hosszan támogatott kiadás (azaz LTS). A wsl telepítése a 22.04-et tette fel, de amit fent vázlatoltam, az a 24.04-et. Tehát, Windows-on a WSL alatt 2 rendszer mappának kellene lennie. Egy sima `Ubuntu` és egy `Ubuntu-24.04`-nek.
+A fenti példában mikor én csináltam, egyszerre van jelen a 22.04 és a 24.04. Ubuntu-ból félévente jelenik meg új verzió, de 2 évente van hosszan támogatott kiadás (azaz LTS). A wsl telepítése a 22.04-et tette fel, de amit fent vázlatoltam, az a 24.04-et. Tehát, Windows-on a WSL2 alatt 2 rendszer mappának kellene lennie. Egy sima `Ubuntu` és egy `Ubuntu-24.04`-nek.
 
 **Az egyik lehetőséged, hogy csak törlöd az alkalmazások közül:**
 
 ![Ubuntu törlés](../public/img/bevezetes/install/wsl/ubuntu-remove.png)
 
-**A másik lehetőséged, hogy alapértelmezettet cserélsz és/vagy le regisztrálod a WSL-ből**, de attól még megtartja és egy véletlen indítással újból aktív lesz (én úgy tapasztaltam):
+**A másik lehetőséged, hogy alapértelmezettet cserélsz és/vagy le regisztrálod a WSL2-ből**, de attól még megtartja és egy véletlen indítással újból aktív lesz (én úgy tapasztaltam):
 
 Iníts egy adminisztátori windows terminált
-Nézd meg milyen WSL rendszereid vannak:
+Nézd meg milyen WSL2 rendszereid vannak:
 ```powershell
 wsl -l
 ```

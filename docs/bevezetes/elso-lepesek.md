@@ -135,5 +135,28 @@ Ha pedig kérdésed lenne, azt számos módon felteheted.
 
 Facebook-on is írhattok, de ott nem garantálom, hogy reagálni fogok.
 
-> [!WARNING] Figyelem
+De, azért írok pár tipikus kérdést, amit neten úgy szembe szokott jönni.
+
+> [!WARNING]
 > Ha célzottan nekem szeretnétek írni, akkor ez esetben tegyétek hozzá, hogy honnan jöttök, hogy be tudjam azonosítani, hogy miért írtok. (Pl. "Numichi.Dev oldalról jöttem")
+
+### Kell-e diploma?
+> [!WARNING]
+> Nem vagyok HR szakember, így csak a saját perspektívámból tudok írni. Benne van, hogy eltér az általad tapasztaltaktól.
+
+Ez a kérdés elég sokszor szembe jöhet a magyar gyakorikérdések.hu oldalon és ahány ember annyi vélemény, és meddő vitába torkollik.
+
+Az IT területén való munkavégzéshez nem feltétlenül szükséges egyetemi diploma, mesterdiploma vagy doktori cím, de elősegíti a karriered. A munkáltatók inkább a tapasztalatot és a képességeket értékelik, nem pedig a megszerzett diplomákat részesítik előnyben. Természetesen ez azokra tud igaz lenni, aki már rendelkezik X év tapasztalattal, de ez se a semmiből jön, ugye. Valahol el kellet mindenkinek kezdeni. A kezdő IT-s emberek számára inkább, úgy tudnék fogalmazni, hogy attól függ…
+
+Függ a cég piaci helyzetétől, munkaerőpiac állapotától. 2022-ben mikor mindenkit is fekete lyukként kebeleztek be, akkor nem számított. Ezért is virágoztak a bootcamp-ek, akik 3-6 hónap után jó fizetéssel csábított mindenkit állás-garanciával. Aztán 2023-ban több munkaerő volt, mint kellet a futó projektre, így nem tudtak munkát biztosítani a feleslegnek. Így elbocsátási hullám keletkezet. Ebben a környezetben persze valahogy ki kell tűnni. Tehát 2024 nem a Juniorok éve lesz és felteszem a 2025 Q1-2 sem nagyon. Követni kell a paicot.
+
+A diploma mellet van az úgynevezett `Certificate` vizsgák, amit cégek vagy szervezetek bocsátanak ki bizonyítási jelleggel, hogy rendelkezel egy specifikus tudással vagy ismerettel az általuk fejlesztett termékről, amit a munkaadók elfogadnak. A diplomákkal ellentétben ennek van érvényességi ideje, mivel maga a termék is fejlődik, így jellemzően 1 év utána érvényét veszti. És mivel speciális tudásról van szó, így célzott munkakörökre akár erősebben nyom, mint egy diploma.
+
+### Javasom-e a Bootcamp-et?
+A Bootcamp az alapjában véve egy szolgáltatás, amit egy gazdasági cég ad. Az biztos, hogy nem olcsó mulatság, de nem is tud olcsó lenni. Miért? Tegyük fel, hogy dolgozol valamennyiért. Bevállalnád azt, hogy kiveszel szabadságot és fele annyiért elmész dolgozni máshova ideiglenesen? Szabadságod is elvész és fele annyit is keresel. Nem ugye? Az IT-ban ez 1-2 milliós összegek környékén mozog havi szinten és nem egy mentor van. Természetesen ez a `business as usual`, de vannak olyan mentorok, akik ingyen is csinálnák, mert szeretik ezt csinálni. Csak, azt meg a cég nem teheti meg, hogy ingyen foglalkoztat. És persze a cégnek is vannak egyéb kiadása is. Tehát, olcsóbb nem tud lenni.
+
+Azt is mindenképpen lekopogom, hogy ha még is jelentkezik valaki és bevállalja a költségeket, akkor annak hozadéka lesz. Egy előre megtervezett ösvényen végig kísérik, valóságos szituációkba kényszerítik és segítenek megérteni a szakma rejtelmeit. Továbbá rá leszel kényszerítve, hogy tanulj és gyakorolj. Lesz közvetlen mentorod, aki minden kérdésedre válaszol, még ha oltári baromságnak is tartod, magát a kérdésed.
+
+Természetesen ebbe az időkeretbe nem fér bele minden. Csak az alapok. Hogyan vezesd azt az autót, de hogy hogyan működik a motor és annak alkatrészei, abba nem mennek bele. Pedig az adja az igaz megértést, a hogyan működikről, csak hát erre ugye nincs idő...
+
+De, hogy hogyan fog teljesíteni a munkaerőpiacon ezzel a tudással, az már más kérdés. A `állás-garancia`-ban én nem bízok, mivel a munkaerőpiaci helyzet hamar felülírhatja. Én azt mondom, hogy gyakorolj, találj ki egy projektet és olyan technológiával old meg amit még nem ismersz. Vagy old meg újra, egy másik technológiával. Így több mindent látsz, és majd interjún jó benyomást kelthet az, hogy ezt is azt is láttad már.
