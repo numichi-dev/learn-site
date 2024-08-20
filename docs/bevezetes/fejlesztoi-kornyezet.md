@@ -58,27 +58,10 @@ Linux-on vagy macOS-en nincs szükség választási lehetőségre és ezen oldal
 
 Windows-on azért már nem olyan egyszerű a történet. Az utóbbi időben a Windows is elkezdett a fejlesztők alá dolgozni, hogy egyszerűbb legyen, de így is akad 1-2 dolog, ami nem megugorható direktben vagy vadászni kell a programokat.
 
-Így két lehetséges (ha úgy tetszik) támogatást mutatok be, ami segít a programok telepítésében vagy használatában. Az egyik ilyen a Chocolatey, ami inkább hasonlít egy Linux repository-hoz vagy akár említhetném a GooglePlay-t vagy AppleStore-t. De a Chocolatey egy program gyűjtemény tároló, ami leegyszerűsíti a programok telepítését és menedzselését, beleértve annak frissítését is. Ez közvetlen a Windows-ra telepít és onnan használható.
+Chocolatey a Windows-on segít a programok telepítésében vagy használatában. Ez inkább hasonlít egy Linux repository-hoz vagy akár említhetném a GooglePlay-t vagy AppleStore-t. De a Chocolatey egy program gyűjtemény tároló, ami leegyszerűsíti a programok telepítését és menedzselését, beleértve annak frissítését is. Természetesen ennek működése függ a külső körülményektől is, azaz ha egy külső oldalon egy telepítendő program nem tölthető le, akkor a Chocolatey is hibára fog futni.
 
-A másik lehetséges irány, amit bemutatok, a WSL2 (Windows Subsystem for Linux), ami egy virtuális Linux réteget hoz létre a Windows rendszerre. Így, az ide telepített programok Linux környezeten fog fugni, azaz az itt fordított program Linux környezeten fog végbe menni. Fontos, hogy a platform függő nyelvek Linux-os fordítást követően nem indulnak Windows-on és fordítva se. Azaz a Linux nem ismeri az `exe`-t.
-
-[//]: # (TODO: Megvizsgálni majd, hogy WSL2 Hostolás esetében problémába ütközünk-e)
-> [!WARNING]
-> Nem tudom, hogyan fog viselkedni, ha WSL2-ben hosztolunk egy adott porton általunk írt projektet. Azt hogyan érjük el Windows oldalt böngészőből. Sose próbáltam. Majd, ha falba ütközünk, akkor majd korrigálom a leírást. Addigis első körben nem akadályoz mindent egy darabig.
-
-### WSL2 plugin
-Ha WSL2-en szeretnél fejleszteni és futtatni, akkor a szükséged lesz a WSL2 plugin-ra. Először is keres rá a WSL2 plugin-ra. Ezt egy "legó" szerű iconon keresztül tudod megtenni. (Segítséget [itt](https://code.visualstudio.com/docs/editor/extension-marketplace) találsz.) Majd tenyerelj rá az `Install`-ra.
-
-![WSL2 Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl.png)
-
-Ha van WSL2-ed már, akkor rátudsz csatlakozni.
-
-![WSL2 Plugin](../public/img/bevezetes/install/vscode/code-plugin-wsl-connect.png)
-
-Majd bal-lent meg kell jelennie a `WSL2: Ubuntu-24.04`-nek, vagy amire csatlakoztál.
-
-> [!IMPORTANT]
-> Minden plugin telepítés elött csatlakoznod kell a WSL2-re, mert a plugin-t oda menti le és onnan használja. Ha későbbiekben nem használnád a WSL2-t, akkor a VS Code úgy látja, hogy nincs az a plugin feltelepítve!
+> [!NOTE]
+> A Chocolatey nem tökéletes! Nem tárol programokat, csak központosít. Tehát, bármi ami telepíthető Chocolatey-al az kézzel is telepíthető, amit a Windows felhasználók mindeddig megszoktak.
 
 ## Windows Chocolatey telepítése
 
@@ -94,8 +77,17 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Kész is. Majd az első `choco install` esetén előfordul, hogy eltart majd egy darabig.
 
 
-## Ubuntu WSL2 telepítés Windows-on
+## Ubuntu WSL2 telepítés Windows-on (opcionális)
+A WSL2 abban az esetben lehet szükség, ha Linux-os környezetet szeretnél a Windows mellé. Természetesen a VS Code-ot is hozzá lehet kötni `WSL` plugin-on keresztül és rákapcsolódva.
 
+> [!INFO]
+> A WSL2 alatt futtatott programokat vagy szolgáltatásokat `localhost` címmel nem fogjuk tudni elérni! Késöbbiekben ez okozhat fennakadás és további konfigurációra lenne szükség.
+
+> [!NOTE]
+> A WSL2 további [NAT hálózat](https://szit.hu/doku.php?id=oktatas:halozat:cisco_szerint_a_halozat:fejezet_11_-_nat_-_ipv4) alatt helyezkedik el. Így direkt elérés nem lehetséges.
+
+
+### Telepítés
 Teljes leírás [itt](https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/guides/install-ubuntu-wsl2/).
 
 > [!NOTE]

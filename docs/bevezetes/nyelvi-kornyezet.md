@@ -4,20 +4,40 @@ lastUpdated: 2024-08-16
 ---
 
 # Nyelvi környezet
+> [!WARNING]
+> Írás alatt, még nem teljes
+
+## Bevezetés
+[//]: # (TODO: Ubuntu/Linux az a következők is ide tartoznak: ...)
+
+### VS Code
+> [!WARNING]
+> Mivel Windows környezeten használok a leírás létrehozására, így e rendszer szempontjából mutatom meg a betűkombinációs "short cut" utasításokat. Ez eltérhet a Linux-októl, de a macOS esetén biztosan, mert ott `opt` és `command` van.
+
+Majd a nyelveknél létrehozunk egy `Hello, World!` példa programot, amit ellenőrzés miatt futtatni is fogunk. Ehhez üres fájlt kell majd létrehozni. Itt megmutatom a hogyant.
+
+Egy üres fájl létrehozására több mód is van, de ezek mindegyike ugyanoda vezet.
+
+- Jobb fent `File` -> `New file...` -> `Text file` (kattints rá)
+- Felülre a `search` mezőbe beírod, hogy `> text file`. A `>` karakter szükséges, amit az jobb oldali `Alt` vagy egyes billentyűzeteken `AltGr` és `í` karakter.
+- Egyszerűen lenyomod a `Ctrl + N` kombinációt.
+
+Ezt követően `Ctrl + S`-el tudod ténylegesen menteni a kívánt helyre.
 
 ## C, C++
+C/C++ oldal: [https://www.cprogramming.com/](https://www.cprogramming.com/)
 
 ### Telepítés
 Forrás: [C/C++ for Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
 
-#### Linux, WSL2
-Ha Linux-on vagy, vagy WSL2-t használsz, akkor egyszerűen kiadod ezt, vagy a disztribúciónak megfelelően.
+#### Ubuntu/Linux
+Ha Ubuntu/Linux-on vagy, vagy WSL2-t használsz, akkor egyszerűen kiadod ezt, vagy a disztribúciónak megfelelően.
 ```bash
 $ sudo apt install gcc g++
 ```
 
 #### macOS
-```bash
+```zsh
 $ brew install gcc
 ```
 
@@ -48,7 +68,16 @@ Megjelenik egy szerkesztési ablak, ahol új mezőt kell felvenni. Kattints az `
 
 ![MSYS2 Path 2](../public/img/bevezetes/install/c/msys2-path-setting-2.png)
 
-Nyiss egy windows terminált és írd be ezt, hogy `gcc --version`. Ha kiírja a következőt vagy hasonlót, jó voltál.
+
+
+#### Windows kézi telepítés
+
+A [MSYS2 oldalán](https://www.msys2.org/) kézzel töltöd le a telepítőt. Ezt az `Installation` vörös cím alatt találod közvetlenül. Neve: `msys2-x86_64-<DÁTUM>.exe` lesz. Ezt indísd el, majd next-next-next. Nem kell külön megnyitni, mert telepítés után megnyílik neked automatikusan. Ha még se, akkor megtalálod `C:\msys64\crt64.exe` itt.
+
+Innentől megegyezik a `Chocolatey` verzióval, annyi eltéréssel, hogy nem kell a `tools` útvonal, mert alapértelmezetten a `C:\` alá teszi.
+
+### Telepítés ellenőrzése
+Nyiss egy terminált és írd be ezt, hogy `gcc --version`. Ha kiírja a következőt vagy hasonlót, jó voltál.
 
 ```
 gcc.exe (Rev3, Built by MSYS2 project) 14.1.0
@@ -57,16 +86,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-#### Windows kézi telepítés
-
-A [MSYS2 oldalán](https://www.msys2.org/) kézzel töltöd le a telepítőt. Ezt az `Installation` vörös cím alatt találod közvetlenül. Neve: `msys2-x86_64-<DÁTUM>.exe` lesz. Ezt indísd el, majd next-next-next. Nem kell külön megnyitni, mert telepítés után megnyílik neked automatikusan. Ha még se, akkor megtalálod `C:\msys64\crt64.exe` itt.
-
-Innentől megegyezik a `Chocolatey` verzióval, annyi eltéréssel, hogy nem kell a `tools` útvonal, mert alapértelmezetten a `C:\` alá teszi.
-
 ### VS Code beállítása
-
-> [!NOTE]
-> Ha van WSL2-t Windows-on és oda dolgozol, akkor csatlakozz plugin telepítés elött.
 
 #### Plugin telepítés
 3 Plugin-t szükséges telepíteni. A Plugin nézethez kattints bal oldalon a plugin menüre.
@@ -80,15 +100,9 @@ Innentől megegyezik a `Chocolatey` verzióval, annyi eltéréssel, hogy nem kel
 ![Code Runner](../public/img/bevezetes/install/vscode/vscode-code-runner-plugin.png)
 
 #### Teszt futtatás
-Hogy meg bizonyosodjunk, hogy készen áll-e a környezet, akkor csináljunk két ideiglenes fájlt, amit majd törlünk a folyamat végén.
+Hozz létre két üres fájlt a bevezetőben leírt módon.
 
-Egy üres fájl létrehozása:
-
-- Jobb fent `File` -> `New file...` -> `Text file` (kattints rá)
-- Felülre a `search` mezőbe beírod, hogy `> text file`. A `>` karakter szükséges, amit az jobb oldali `Alt` vagy egyes billentyűzeteken `AltGr` és `í` karakter.
-- Egyszerűen lenyomod a `Ctrl + N` kombinációt.
-
-Az egyik tartalma legyen ez a `C` kód, és mentsd el `Ctrl + S` kombinációval `example1.c` néven. A `.c` a fontos.
+Az egyik tartalma legyen ez a `C` kód, és mentsd el például `example1.c` néven. A `.c` a fontos a végén.
 ```c
 #include <stdio.h>
 
@@ -98,7 +112,7 @@ int main() {
 }
 ```
 
-Az másik tartalma legyen ez a `C++` kód, és mentsd el `Ctrl + S` kombinációval `example2.cpp` néven. A `.cpp` a fontos.
+Az másik tartalma legyen ez a `C++` kód, és mentsd el például `example2.cpp` néven. A `.cpp` a fontos a végén.
 ```cpp
 #include <iostream>
 
@@ -119,32 +133,76 @@ Hello, World!
 Ha ez meg van, akkor SIKER! Akkor kitörölheted a fájlokat. Vedd figyelembe, hogy most 4 lesz. 1-1 `.c` és `.cpp` mellet további kettő. Ezek a lefordítottak. Windows esetén ezek `.exe`-k lesznek. Ezek mehetnek a levesbe.
 
 ## Rust
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## Go
+> [!WARNING]
+> Írás alatt, még nem teljes
 
-Írás alatt
+GoLang oldal: [https://go.dev/](https://go.dev/)
+
+### Telepítés
+Forrás: [Go in Visual Studio Code](https://code.visualstudio.com/docs/languages/go)
+
+#### Ubuntu/Linux
+Ha Ubuntu/Linux-on vagy, vagy WSL2-t használsz, akkor egyszerűen kiadod ezt, vagy a disztribúciónak megfelelően.
+
+```bash
+$ sudo snap install go --classic
+```
+
+#### macOS
+```zsh
+$ brew install go
+```
+
+#### Windows Chocolatey
+Forrás: [https://community.chocolatey.org/packages/golang](https://community.chocolatey.org/packages/golang)
+```powershell
+choco install -y golang
+```
+
+#### Windows kézi telepítés
+Tölsd le manuálisan innen a [https://go.dev/dl/](https://go.dev/dl/) oldalról a `go<verzió>.windows-amd64.msi`-t és telepísd.
+
+### VS Code beállítása
+#### Plugin telepítés
+1 Plugin-t szükséges telepíteni. A Plugin nézethez kattints bal oldalon a plugin menüre.
+
+![Go Plugin](../public/img/bevezetes/install/go/go-extension.png)
+
+#### Teszt futtatás
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World!")
+}
+```
 
 ## Java
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## Kotlin
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## Python
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## PHP
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## JavaScript, TypeScript
-
-Írás alatt
+> [!INFO]
+> Írás alatt
 
 ## HTML, CSS
 
